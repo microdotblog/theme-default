@@ -10,8 +10,8 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 	<itunes:image href="https://micro.blog/{{ site.username }}/podcast.png" />
-	<itunes:category text="Society &amp; Culture">
-		<itunes:category text="Personal Journals"></itunes:category>
+	<itunes:category text="{{ site.itunes_category | xml_escape }}">
+		<itunes:category text="{{ site.itunes_subcategory | xml_escape }}"></itunes:category>
 	</itunes:category>
 	<itunes:explicit>no</itunes:explicit>		
 	<language>en</language>
