@@ -1,11 +1,12 @@
 ---
 layout: default
+regenerate: true
 ---
 
 <div class="home h-feed">
 
   <ul class="post-list">
-    {% for post in paginator.posts %}
+    {% for post in site.posts limit:25 %}
       <li class="h-entry">
 		{% if post.microblog == false %}
 			<h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
@@ -19,10 +20,6 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-{% if paginator.previous_page or paginator.next_page %}
-    {% include pagination.html %}
-{% endif %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
