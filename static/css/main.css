@@ -182,3 +182,7 @@ h1 { font-size: 26px; margin-bottom: 0px; }
 .highlight .vg { color: teal; }
 .highlight .vi { color: teal; }
 .highlight .il { color: #009999; }
+
+video {
+	max-width: 100%;
+}
