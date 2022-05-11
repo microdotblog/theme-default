@@ -1,24 +1,24 @@
-{{ define "main" }}
+{{ define "main" -}}
 <div class="home h-feed">
 
   <ul class="post-list">
-	{{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
-	{{ range $paginator.Pages  }}
+  {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
+    {{ range $paginator.Pages  -}}
       <li class="h-entry">
-		{{ if .Title }}
-			<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-		{{ end }}
+    {{ with .Title }}
+      <h1><a href="{{ .Permalink }}">{{ . }}</a></h1>
+    {{ end }}
 
-        <a href="{{ .Permalink }}" class="u-url"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+        <a href="{{ .Permalink }}" class="u-url post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></a>
 
         <div class="e-content">
-         	{{ .Content }}
+           {{- .Content -}}
         </div>
       </li>
-    {{ end }}
+    {{- end }}
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "feed.xml" | absURL }}">via RSS</a></p>
 
 </div>
-{{ end }}
+{{- end }}

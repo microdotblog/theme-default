@@ -1,15 +1,14 @@
-{{ define "main" }}
+{{ define "main" -}}
 <div class="post h-entry">
-
   <header class="post-header">
-	{{ if .Title }}
-	  	<h1 class="p-name">{{ .Title }}</h1>
-  	{{ end }}
+    {{ with .Title }}
+      <h1 class="p-name">{{ . }}</h1>
+    {{ end }}
     <p class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>
   </header>
 
   <article class="post-content e-content">
-	{{ .Content }}
+    {{- .Content -}}
   </article>
 
 </div>
@@ -18,4 +17,4 @@
 <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
 {{ end }}
 
-{{ end }}
+{{- end }}

@@ -4,9 +4,9 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
 
   <title>
-      {{ block "title" . }}
+      {{- block "title" . -}}
       {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Site.Title }} - {{ .Title }}{{ end }}
-      {{ end }}
+      {{- end -}}
   </title>
 
   <meta name="description" content="{{ .Summary }}">
