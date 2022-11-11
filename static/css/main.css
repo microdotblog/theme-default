@@ -3,7 +3,8 @@
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-medium: 17px;
   --font-size-small: 15px;
-  --font-size-title: 20px;
+  --font-size-large: 20px;
+  --font-size-title: 24px;
   --font-color-main: #464545;
   --font-color-accent: #1756a9;
   --font-color-accent-secondary: #db4325;
@@ -55,17 +56,43 @@ blockquote,
 }
 
 /** Site Header */
-div .site-header {
+.site-header {
   max-width: var(--width-content);
   margin: auto;
 }
 
-div .site-header-title {
+.site-header-title {
   font-size: var(--font-size-title);
+  text-align: center;
 }
 
 /** Site Nav */
-div .site-header-nav {
+.site-header-nav {
   max-width: var(--width-content);
   margin: auto;
+  text-align: center;
+}
+
+/** Content */
+.page-content {
+  max-width: var(--width-content);
+  margin: auto;
+}
+.post-list .post-list-item {
+  list-style: none;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.post-list-item-title {
+  text-align: center;
+  font-size: var(--font-size-large);
+}
+
+.post-list-item-date {
+  text-align: center;
+  font-size: var(--font-size-medium);
 }
