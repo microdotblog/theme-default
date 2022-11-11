@@ -2,12 +2,14 @@
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-medium: 17px;
-  --font-size-small: 015px;
+  --font-size-small: 15px;
+  --font-size-title: 20px;
   --font-color-main: #464545;
   --font-color-accent: #1756a9;
   --font-color-accent-secondary: #db4325;
   --font-color-accent-block: #dba425;
   --background-color-main: #f9f9f9;
+  --width-content: 800px;
 }
 
 /** Basic styling */
@@ -50,4 +52,20 @@ blockquote,
   padding: 5px 15px 15px 15px;
   background-color: #ffb90824;
   border-radius: 8px;
+}
+
+/** Site Header */
+div.site-header {
+  max-width: var(--width-content);
+  margin: auto;
+}
+
+div.site-header-title {
+  font-size: var(--font-size-title);
+}
+
+/** Site Nav */
+div.site-header-nav {
+  max-width: var(--width-content);
+  margin: auto;
 }

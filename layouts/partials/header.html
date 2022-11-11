@@ -1,6 +1,8 @@
 <header class="site-header">
   <div class="site-header-title">
     <a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
+  </div>
+  <div class="site-header-nav">
     <nav class="site-nav">
       <div class="site-nav-trigger">
         {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
@@ -12,4 +14,5 @@
         {{ end }} {{ end }}
       </div>
     </nav>
+  </div>
 </header>
