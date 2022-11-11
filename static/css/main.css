@@ -55,17 +55,17 @@ blockquote,
 }
 
 /** Site Header */
-div.site-header {
+div .site-header {
   max-width: var(--width-content);
   margin: auto;
 }
 
-div.site-header-title {
+div .site-header-title {
   font-size: var(--font-size-title);
 }
 
 /** Site Nav */
-div.site-header-nav {
+div .site-header-nav {
   max-width: var(--width-content);
   margin: auto;
 }
