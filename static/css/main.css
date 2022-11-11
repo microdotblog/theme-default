@@ -1,14 +1,13 @@
 :root {
---font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
---font-size-medium: 1rem;
---font-size-small: .9rem;
---font-color-main: #464545;
---font-color-accent: #1756a9;
---font-color-accent-secondary: #db4325;
---font-color-accent-block: #dba425;
---background-color-main: #F9F9F9;
-
+  --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-size-medium: 17px;
+  --font-size-small: 0.9rem;
+  --font-color-main: #464545;
+  --font-color-accent: #1756a9;
+  --font-color-accent-secondary: #db4325;
+  --font-color-accent-block: #dba425;
+  --background-color-main: #f9f9f9;
 }
 
 /** Basic styling */
@@ -19,7 +18,6 @@ body {
   line-height: 1.4;
   background-color: var(--background-color-main);
 }
-
 
 /** Images */
 img {
@@ -37,7 +35,7 @@ a:visited {
   color: var(--font-color-accent);
 }
 a:hover {
-  color: var(--font-color-accent-secondary);;
+  color: var(--font-color-accent-secondary);
   text-decoration: underline;
 }
 
