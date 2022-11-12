@@ -90,8 +90,8 @@ a.site-header-title-link {
   text-align: center;
 }
 
-.site-nav-link,
-.site-nav-link:visited {
+a.site-nav-link,
+a.site-nav-link:visited {
   color: var(--font-color-main);
 }
 
