@@ -1,6 +1,11 @@
 <header class="site-header">
   <div class="site-header-logo">
-    <img src="https://micro.blog/{{ .Site.Author.username }}/avatar.jpg" class="site-image" alt="{{ .Site.Title }}" width="75px"/>
+    <img
+      src="{{ .Site.Author.avatar }}"
+      class="site-image"
+      alt="{{ .Site.Title }}"
+      width="75px"
+    />
   </div>
   <div class="site-header-title">
     <a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
@@ -9,7 +14,9 @@
     <nav class="site-nav">
       <div class="site-nav-trigger">
         {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
-        <a class="site-nav-link" href="{{ .Page.Params.redirect }}">{{ .Name }}</a>
+        <a class="site-nav-link" href="{{ .Page.Params.redirect }}"
+          >{{ .Name }}</a
+        >
         {{ else }}
         <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
           >{{ .Name }}</a
