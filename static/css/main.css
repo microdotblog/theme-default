@@ -43,8 +43,7 @@ a:visited {
 }
 
 a:hover,
-a.site-header-title-link:hover,
-a.site-nav-link:hover {
+a.site-header-title-link:hover {
   color: var(--font-color-accent-secondary);
   text-decoration: none;
 }
@@ -101,6 +100,10 @@ a.site-nav-link:visited {
   font-size: var(--font-size-small);
   color: var(--font-color-main);
   text-decoration: underline;
+}
+
+a.site-nav-link:hover {
+  color: var(--font-color-accent-secondary);
 }
 
 /** Content */
