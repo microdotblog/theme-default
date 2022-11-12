@@ -99,7 +99,7 @@ a.site-header-title-link {
   margin: 0px;
 }
 
-.post-list-item,
+.postlist.post-list-item,
 .post {
   list-style: none;
   border-radius: 4px;
