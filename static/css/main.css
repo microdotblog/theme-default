@@ -6,7 +6,7 @@
   --font-size-large: 24px;
   --font-size-title: 22px;
   --font-color-main: #323131;
-  --font-color-accent: {{$.Site.Params.link_color}};/** #1756a9;*/
+  --font-color-accent: #1756a9;
   --font-color-subtle: #7f7e7e;
   --color-border: #eaeaea;
   --font-color-accent-secondary: #db4325;
