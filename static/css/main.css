@@ -3,10 +3,11 @@
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-medium: 17px;
   --font-size-small: 15px;
-  --font-size-large: 20px;
-  --font-size-title: 24px;
-  --font-color-main: #464545;
+  --font-size-large: 24px;
+  --font-size-title: 22px;
+  --font-color-main: #323131;
   --font-color-accent: #1756a9;
+  --font-color-subtle: #7f7e7e;
   --font-color-accent-secondary: #db4325;
   --font-color-accent-block: #dba425;
   --background-color-main: #f9f9f9;
@@ -35,11 +36,11 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: var(--font-color-accent);
+  color: var(--font-color-main);
 }
 a:hover {
   color: var(--font-color-accent-secondary);
-  text-decoration: underline;
+	text-decoration: none;
 }
 
 /** Blockquotes */
@@ -57,13 +58,32 @@ blockquote,
 
 /** Site Header */
 .site-header {
-  max-width: var(--width-content);
+  margin-top: 20px;
+  width: var(--width-content);
   margin: auto;
+  text-align: center;
 }
 
-.site-header-title {
+a.site-header-title-link{
   font-size: var(--font-size-title);
-  text-align: center;
+  color: var(--font-color-subtle);
+	line-height: 2;
+}
+
+.page-link {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.site-image {
+  border-radius: 25px;
+}
+
+/** Site Footer */
+.site-footer {
+  max-width: var(--width-content);
+  margin: auto;
+  text-align:center;
 }
 
 /** Site Nav */
@@ -78,7 +98,14 @@ blockquote,
   max-width: var(--width-content);
   margin: auto;
 }
-.post-list .post-list-item {
+
+.post-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.post-list-item, .post{
+
   list-style: none;
   border-radius: 4px;
   background-color: #fff;
@@ -87,12 +114,20 @@ blockquote,
   box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08);
 }
 
-.post-list-item-title {
+.post-header {
   text-align: center;
-  font-size: var(--font-size-large);
 }
 
-.post-list-item-date {
+a.post-list-item-title {
+  display: block;
   text-align: center;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-large);
+  color: var(--font-color-main);
+}
+
+a.post-list-item-date {
+  display: block;
+  text-align: center;
+  font-size: var(--font-size-small);
+  color: var(--font-color-subtle);
 }
