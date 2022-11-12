@@ -42,8 +42,8 @@ a:visited {
 }
 
 a:hover,
-.site-header-title-link a:hover,
-.site-nav-link a:hover {
+a.site-header-title-link:hover,
+a.site-nav-link:hover {
   color: var(--font-color-accent-secondary);
   text-decoration: none;
 }
@@ -95,8 +95,8 @@ a.site-header-title-link {
   text-align: center;
 }
 
-.site-nav-link a,
-.site-nav-link a:visited {
+a.site-nav-link,
+a.site-nav-link:visited {
   color: var(--font-color-main);
 }
 
@@ -133,12 +133,12 @@ li.h-entry {
   font-size: var(--font-size-large);
 }
 
-.post-list-item-title a {
+a.post-list-item-title {
   color: var(--font-color-main);
 }
 
-.post-list-item-title a:hover,
-.post-list-item-date a:hover {
+a.post-list-item-title:hover,
+a.post-list-item-date:hover {
   color: var(--font-color-accent-secondary);
 }
 
@@ -148,7 +148,7 @@ li.h-entry {
   font-size: var(--font-size-small);
 }
 
-.post-list-item-date a {
+a.post-list-item-date {
   color: var(--font-color-subtle);
 }
 
