@@ -14,6 +14,7 @@
   --background-color-main: #ffffff;
   --width-max: 700px;
   --width-min: 350;
+  --width-max-image: 660;
 }
 
 /** Basic styling */
@@ -114,7 +115,7 @@ a.site-nav-link:hover {
 }
 
 .page-content img {
-  max-width: var(--width-max);
+  max-width: var(--width-max-image);
 }
 
 .post-list {
