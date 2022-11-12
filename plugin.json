@@ -1,5 +1,22 @@
 {
-	"version": "1.0.0",
-	"title": "Card Flow",
-	"description": "A simple list of posts."
+  "version": "1.0.0",
+  "title": "Card Flow",
+  "description": "A simple list of posts.",
+  "fields": [
+    {
+      "field": "params.text_color",
+      "label": "Text color",
+      "type": "color"
+    },
+    {
+      "field": "params.link_color",
+      "label": "Link color",
+      "type": "color"
+    },
+    {
+      "field": "params.background_color",
+      "label": "Background color",
+      "type": "color"
+    }
+  ]
 }
