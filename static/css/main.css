@@ -13,8 +13,8 @@
   --font-color-accent-block: #dba425;
   --background-color-main: #ffffff;
   --width-max: 700px;
-  --width-min: 350;
-  --width-max-image: 660;
+  --width-min: 350px;
+  --width-max-image: 660px;
 }
 
 /** Basic styling */
