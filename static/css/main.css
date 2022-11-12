@@ -114,10 +114,6 @@ a.site-nav-link:hover {
   margin: auto;
 }
 
-.page-content img {
-  max-width: var(--width-max-image);
-}
-
 .post-list {
   padding: 0px;
   margin: 0px;
