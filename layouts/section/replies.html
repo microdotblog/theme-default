@@ -6,14 +6,14 @@
 		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
 		{{ $list := $paginator.Pages }}
 		{{ range $list  }}
-		  <li class="h-entry">
+		  <li class="post-list-item">
 			{{ if .Title }}
-				<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+				<h1><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
 			{{ end }}
 
-			<a href="{{ .Permalink }}" class="u-url"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+			<a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
 
-			<div class="e-content">
+			<div class="post-list-item-content">
 				{{ .Content }}
 			</div>
 		  </li>
@@ -21,14 +21,14 @@
     {{ else }}
 		{{ $list := first 25 (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
 		{{ range $list  }}
-		  <li class="h-entry">
+		  <li class="post-list-item">
 			{{ if .Title }}
-				<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+				<h1><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
 			{{ end }}
 
-			<a href="{{ .Permalink }}" class="u-url"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+			<a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
 
-			<div class="e-content">
+			<div class="post-list-item-content">
 				{{ .Content }}
 			</div>
 		  </li>
