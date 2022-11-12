@@ -63,6 +63,10 @@ a.site-header-title-link {
   color: var(--font-color-subtle);
 }
 
+a.site-header-title-link:hover {
+  color: var(--font-color-accent-secondary);
+}
+
 .site-image {
   border-radius: 25px;
 }
