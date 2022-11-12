@@ -42,7 +42,8 @@ a:visited {
 }
 
 a:hover,
-a.site-header-title-link:hover {
+a.site-header-title-link:hover,
+a.site-nav-link:hover {
   color: var(--font-color-accent-secondary);
   text-decoration: none;
 }
