@@ -98,7 +98,9 @@ a.site-header-title-link {
 
 a.site-nav-link,
 a.site-nav-link:visited {
+  font-size: var(--font-size-small);
   color: var(--font-color-main);
+  text-decoration: underline;
 }
 
 /** Content */
