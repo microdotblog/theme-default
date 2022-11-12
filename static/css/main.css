@@ -166,3 +166,9 @@ blockquote,
   background-color: #ffb90824;
   border-radius: 8px;
 }
+
+/** Conversation */
+.microblog_post {
+  margin-top: 20px;
+  padding: 20px;
+}
