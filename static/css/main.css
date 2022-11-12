@@ -99,8 +99,9 @@ a.site-header-title-link {
   margin: 0px;
 }
 
-.postlist.post-list-item,
-.post,.postlist.h-entry {
+li.post-list-item,
+.post,
+li.h-entry {
   list-style: none;
   border-radius: 4px;
   background-color: #fff;
@@ -120,7 +121,8 @@ a.post-list-item-title {
   color: var(--font-color-main);
 }
 
-a.post-list-item-title:hover, a.post-list-item-date:hover {
+a.post-list-item-title:hover,
+a.post-list-item-date:hover {
   color: var(--font-color-accent-secondary);
 }
 
