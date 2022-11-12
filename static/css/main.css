@@ -10,7 +10,7 @@
   --font-color-subtle: #7f7e7e;
   --font-color-accent-secondary: #db4325;
   --font-color-accent-block: #dba425;
-  --background-color-main: #f9f9f9;
+  --background-color-main: #ffffff;
   --width-max: 700px;
   --width-min: 350;
 }
@@ -36,10 +36,13 @@ a {
   color: var(--font-color-accent);
   text-decoration: none;
 }
+
 a:visited {
   color: var(--font-color-main);
 }
-a:hover {
+
+a:hover,
+a.site-header-title-link:hover {
   color: var(--font-color-accent-secondary);
   text-decoration: none;
 }
@@ -61,10 +64,6 @@ a:hover {
 a.site-header-title-link {
   font-size: var(--font-size-title);
   color: var(--font-color-subtle);
-}
-
-a.site-header-title-link:hover {
-  color: var(--font-color-accent-secondary);
 }
 
 .site-image {
@@ -89,6 +88,11 @@ a.site-header-title-link:hover {
   min-width: var(--width-min);
   margin: auto;
   text-align: center;
+}
+
+.site-nav-link,
+.site-nav-link:visited {
+  color: var(--font-color-main);
 }
 
 /** Content */
