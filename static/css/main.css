@@ -8,6 +8,7 @@
   --font-color-main: #323131;
   --font-color-accent: #1756a9;
   --font-color-subtle: #7f7e7e;
+  --color-border: #eaeaea;
   --font-color-accent-secondary: #db4325;
   --font-color-accent-block: #dba425;
   --background-color-main: #ffffff;
@@ -115,12 +116,13 @@ a.site-nav-link:visited {
 li.post-list-item,
 .post,
 li.h-entry {
+  border: 1px solid var(--color-border);
   list-style: none;
   border-radius: 4px;
   background-color: #fff;
   padding: 20px;
   margin-top: 25px;
-  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 5px 5px 7px var(--color-border);
 }
 
 .post-header {
