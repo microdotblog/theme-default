@@ -131,6 +131,11 @@ li.h-entry {
   box-shadow: 5px 5px 7px var(--color-border);
 }
 
+.post-list img {
+  display: block;
+  margin: auto;
+}
+
 .post-header {
   text-align: center;
 }
