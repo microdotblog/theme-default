@@ -100,7 +100,7 @@ a.site-header-title-link {
 }
 
 .postlist.post-list-item,
-.post {
+.post,.postlist.h-entry {
   list-style: none;
   border-radius: 4px;
   background-color: #fff;
