@@ -113,7 +113,7 @@ a.site-nav-link:hover {
 
 li.post-list-item,
 .post,
-li.h-entry {
+li.h-entry, p.h-entry {
   border: 1px solid var(--shadow-color);
   list-style: none;
   border-radius: 4px;
@@ -182,3 +182,21 @@ blockquote,
 code {
   white-space: pre-wrap !important;
 }
+
+/** Categories */
+div.archive_categories {
+  display: flex;
+  border: none;
+}
+
+div.archive_categories p{
+  padding: 8px;
+
+  border: 1px solid var(--shadow-color);
+  color: white;
+  margin-right: 10px;
+}
+
+
+
+
