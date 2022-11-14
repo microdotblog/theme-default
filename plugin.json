@@ -22,6 +22,16 @@
       "field": "params.background_color",
       "label": "Background color",
       "type": "color"
+    },
+    {
+      "field": "params.shadow_color",
+      "label": "Shadow color",
+      "type": "color"
+    },
+    {
+      "field": "params.blockquote_color",
+      "label": "Blockquote color",
+      "type": "color"
     }
   ]
 }
