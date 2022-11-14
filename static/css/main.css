@@ -201,7 +201,7 @@ div.archive_categories p {
 }
 
 /** Photos */
-div.photos-grid-container {
+.photos-grid-container {
   grid-template-columns: 32% 32% 32%;
 }
 
