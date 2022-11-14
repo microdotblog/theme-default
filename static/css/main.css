@@ -186,17 +186,21 @@ code {
 /** Categories */
 div.archive_categories {
   display: flex;
-  border: none;
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 div.archive_categories p{
   padding: 8px;
-
-  border: 1px solid var(--shadow-color);
   color: white;
   margin-right: 10px;
 }
 
+/** Search */
+form {
+  text-align: center;
+}
 
 
 
