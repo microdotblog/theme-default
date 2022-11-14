@@ -177,3 +177,8 @@ blockquote,
   margin-top: 20px;
   padding: 20px;
 }
+
+/** Code */
+code {
+  white-space: pre-wrap !important;
+}
