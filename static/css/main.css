@@ -34,13 +34,10 @@ img {
 }
 
 /** Links */
-a {
+a,
+a:visited {
   color: var(--font-color-accent);
   text-decoration: none;
-}
-
-a:visited {
-  color: var(--font-color-main);
 }
 
 a:hover,
@@ -176,6 +173,7 @@ blockquote,
   padding: 5px 15px 15px 15px;
   background-color: #ffb90824;
   border-radius: 8px;
+  margin:0px; 
 }
 
 /** Conversation */
