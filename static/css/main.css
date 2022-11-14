@@ -168,7 +168,8 @@ blockquote,
   padding: 5px 15px 15px 15px;
   background-color: #ffb90824;
   border-radius: 8px;
-  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /** Conversation */
