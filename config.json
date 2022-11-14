@@ -1,2 +1,8 @@
 {
+    "params": {
+		"text_color": "#323131",
+		"link_color": "#1756a9",
+		"hover_color": "#db4325",
+        "background_color": "#ffffff"
+	}
 }
