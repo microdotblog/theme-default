@@ -19,6 +19,11 @@
       "type": "color"
     },
     {
+      "field": "params.subtle_color",
+      "label": "Subtle color",
+      "type": "color"
+    },
+    {
       "field": "params.background_color",
       "label": "Background color",
       "type": "color"
