@@ -114,7 +114,8 @@ a.site-nav-link:hover {
 li.post-list-item,
 .post,
 li.h-entry,
-p.h-entry, div.photos-grid-container {
+p.h-entry,
+div.photos-grid-container {
   border: 1px solid var(--shadow-color);
   list-style: none;
   border-radius: 4px;
@@ -197,6 +198,11 @@ div.archive_categories p {
   border: 1px solid var(--shadow-color);
   color: white;
   margin-right: 10px;
+}
+
+/** Photos */
+div.photos-grid-container {
+  grid-template-columns: 32% 32% 32%;
 }
 
 /** Search */
