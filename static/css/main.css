@@ -209,3 +209,25 @@ div.archive_categories p {
 form {
   text-align: center;
 }
+
+/** Subscribe */
+form input [type=text] {
+    width: 270px;
+    height: 34px;
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 12px;
+    border: 2px solid #eee;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 17px;
+    -webkit-appearance: none;
+}
+
+form input [type=button] {
+  background-color: var(--font-color-accent-secondary);
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+}
