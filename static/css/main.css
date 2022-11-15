@@ -211,7 +211,7 @@ form {
 }
 
 /** Subscribe */
-form input [type=text] {
+input[type="text"] {
     width: 270px;
     height: 34px;
     font-size: 13px;
@@ -224,7 +224,7 @@ form input [type=text] {
     -webkit-appearance: none;
 }
 
-form input [type=button] {
+form input[type="button"] {
   background-color: var(--font-color-accent-secondary);
     border: 0;
     padding: 8px;
