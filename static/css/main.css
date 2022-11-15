@@ -55,6 +55,18 @@ a.site-header-title-link:hover {
   padding: 10px;
 }
 
+/** Response Options */
+.response-options {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.response-options a {
+  padding: 8px;
+  border: 1px solid var(--shadow-color);
+  font-size: var(--font-size-medium);
+}
+
 a.site-header-title-link {
   font-size: var(--font-size-title);
   color: var(--font-color-subtle);
@@ -211,23 +223,23 @@ form {
 }
 
 /** Subscribe */
-input[type="text"] {
-    width: 270px;
-    height: 34px;
-    font-size: 13px;
-    font-weight: 400;
-    padding-left: 12px;
-    border: 2px solid #eee;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 17px;
-    -webkit-appearance: none;
+input[type='text'] {
+  width: 270px;
+  height: 34px;
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 12px;
+  border: 2px solid #eee;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 17px;
+  -webkit-appearance: none;
 }
 
-form input[type="submit"] {
+form input[type='submit'] {
   background-color: var(--font-color-accent-secondary);
-    border: 0;
-    padding: 8px;
-    border-radius: 8px;
-    color: white;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
 }
