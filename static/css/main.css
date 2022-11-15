@@ -224,7 +224,7 @@ input[type="text"] {
     -webkit-appearance: none;
 }
 
-form input[type="button"] {
+form input[type="submit"] {
   background-color: var(--font-color-accent-secondary);
     border: 0;
     padding: 8px;
