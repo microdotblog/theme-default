@@ -3,7 +3,7 @@
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-medium: 17px;
-  --font-size-small: 15px;
+  --font-size-small: 14px;
   --font-size-large: 24px;
   --font-size-title: 22px;
   --font-color-subtle: #7f7e7e;
@@ -82,6 +82,7 @@ a.site-header-title-link {
   min-width: var(--width-min);
   margin: auto;
   text-align: center;
+  font-size: var(--font-size-small);
 }
 
 .rss-subscribe {
