@@ -221,7 +221,7 @@ div.archive_categories p {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   div.archive_categories {
     display: block;
   }
