@@ -231,7 +231,11 @@ form {
 }
 
 /** Form fields */
-input[type='text'], input[type='email'] textarea[name='message'] {
+form label {
+  display: block;
+}
+
+input[id='input_search'], input[type='email'], textarea[name='message'] {
   padding: 8px;
   border: 2px solid #CCC;
   border-radius: 10px;
