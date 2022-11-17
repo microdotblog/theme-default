@@ -7,9 +7,14 @@ Cards is a simple and lightweight theme for Micro.blog.
 - Install the Card theme.
 
 ## Support
-If you have any issues, you can email me at cardtheme@gregorich.me.
+If you have any issues, you can email me from this [form](https://ericgregorich.com/email/).
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M0DLOZR)
+
+## Making Customizations to the theme
+The easiest (and safest) way to customize this theme is to create a new blank theme while the Cards theme is installed. Then, you can customize the templates in your blank theme without changing the Cards theme. Be sure the select your blank theme (whatever you named it) on your Micro.blog Design page.
+
+When updates are pushed out to the Cards theme, the theme files will be updated automatically. Any custom theme files you have in your custom theme will be untouched.
 
 ## Add a reply option to your posts
 If you would like to add a link to your post where visitors can reply on Micro.blog, I recommend using the "[Conversation on Micro.blog](https://github.com/svendahlstrand/plugin-conversation-on-mb)" plugin by [@sod](https://micro.blog/sod).
