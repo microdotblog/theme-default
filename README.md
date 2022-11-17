@@ -17,7 +17,7 @@ The easiest (and safest) way to customize this theme is to create a new blank th
 When updates are pushed out to the Cards theme, the theme files will be updated automatically. Any custom theme files you have in your custom theme will be untouched.
 
 ## Add a reply option to your posts
-If you would like to add a link to your post where visitors can reply on Micro.blog, I recommend using the "[Conversation on Micro.blog](https://github.com/svendahlstrand/plugin-conversation-on-mb)" plugin by [@sod](https://micro.blog/sod).
+If you want to add a link to your post where visitors can reply from Micro.blog, I recommend using the "[Conversation on Micro.blog](https://github.com/svendahlstrand/plugin-conversation-on-mb)" plugin by [@sod](https://micro.blog/sod).
 
 -   Install the Plugin
     -   In your Micro.blog settings, open Plugins.
@@ -30,12 +30,12 @@ If you would like to add a link to your post where visitors can reply on Micro.b
     -   Click on the Edit Custom Themes button.
     -   Select your theme.
     -   Select the layouts/post/single.html file.
-    -   Insert this immediately after the {{ .Content }} text.
-        -   `<div class="response-options">{{ partial "conversation-link.html" . }}</div>`
+    -   Insert this code snippet to your page. After the {{ .Content }} text works well.
+        - `<div class="response-options">{{ partial "conversation-link.html" . }}</div>`
     -   Click Update Template to save your changes.
 
 ## Add a reply by email option to your posts
-If you would like to add a link to your post, visitors can reply by email, I recommend using the "[Reply by email](https://github.com/svendahlstrand/plugin-reply-by-email)" plugin by [@sod](https://micro.blog/sod).
+If you want to add a link to your post where visitors can reply to the post using email, I recommend using the "[Reply by email](https://github.com/svendahlstrand/plugin-reply-by-email)" plugin by [@sod](https://micro.blog/sod).
 
 - Install the Plugin
 	- Open Plugins.
@@ -48,11 +48,12 @@ If you would like to add a link to your post, visitors can reply by email, I rec
 	- Click on the Edit Custom Themes button.
 	- Select your theme.
 	- Select the layouts/post/single.html file.
-	- Insert this immediately after the {{ .Content }} text.
-	- `<div class="response-options">{{ partial "reply-by-email.html" . }}</div>`
+	- Insert this code snippet to your page. After the {{ .Content }} text works well.
+		- `<div class="response-options">{{ partial "reply-by-email.html" . }}</div>`
 	- Click Update Template to save your changes.
 
-* If your also using the Conversation plugin, you can put them both together like this:
+> If your also using the Conversation plugin, you can put them both together by adding this code block. Whether your using one or both plugins, add you partial text inside the response-options Div tag to recieve some automatical styles.
+
 ```html
 <div class="response-options">
 	{{ partial "conversation-link.html" . }}
