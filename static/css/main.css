@@ -225,16 +225,7 @@ div.archive_categories p {
   grid-template-columns: 32% 32% 32%;
 }
 
-/** Search */
-form {
-  text-align: center;
-}
-
 /** Form fields */
-form label {
-  display: block;
-}
-
 input[id='input_search'], input[type='email'], textarea[name='message'] {
   padding: 8px;
   border: 2px solid #CCC;
