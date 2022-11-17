@@ -57,9 +57,10 @@ a.site-header-title-link:hover {
 
 /** Response Options */
 .response-options {
-  margin: 30px;
   text-align: center;
   border-radius: 15px;
+  margin-left: 15px;
+  margin-top: 30px;
 }
 
 .response-options a {
@@ -213,7 +214,6 @@ div.archive_categories {
   padding-bottom: 0;
 }
 
-
 div.archive_categories p {
   padding: 8px;
   border: 1px solid var(--shadow-color);
@@ -233,16 +233,19 @@ div.archive_categories p {
 }
 
 /** Form fields */
-input[id='input_search'], input[type='email'], textarea[name='message'] {
+input[id='input_search'],
+input[type='email'],
+textarea[name='message'] {
   padding: 8px;
-  border: 2px solid #CCC;
+  border: 2px solid #ccc;
   border-radius: 10px;
   width: 270px;
   margin: 20px;
   height: 25px;
 }
 
-form input[type='submit'], form button[type="submit"] {
+form input[type='submit'],
+form button[type='submit'] {
   background-color: var(--font-color-accent-secondary);
   border: 0;
   padding: 8px;
