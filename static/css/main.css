@@ -2,11 +2,10 @@
 :root {
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-size-medium: 17px;
-  --font-size-small: 14px;
-  --font-size-large: 24px;
-  --font-size-title: 22px;
-  --font-color-subtle: #7f7e7e;
+  --font-size-medium: 1.8rem;
+  --font-size-small: 1.2rem;
+  --font-size-large: 2rem;
+  --font-size-title: 1.5rem;
   --width-max: 700px;
   --width-min: 350px;
   --width-max-image: 660px;
