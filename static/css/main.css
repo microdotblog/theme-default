@@ -58,12 +58,13 @@ a.site-header-title-link:hover {
 .response-options {
   margin: 30px;
   text-align: center;
+  border-radius: 15px;
 }
 
 .response-options a {
   padding: 8px;
   border: 1px solid var(--shadow-color);
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-small);
 }
 
 a.site-header-title-link {
