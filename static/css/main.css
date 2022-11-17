@@ -230,8 +230,8 @@ form {
   text-align: center;
 }
 
-/** Subscribe */
-input[type='text'], textarea {
+/** Form fields */
+input[type='text'], input[type='email'] textarea[name='message'] {
   width: 270px;
   height: 34px;
   font-size: 13px;
