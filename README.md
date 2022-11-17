@@ -2,7 +2,7 @@
 Cards is a simple theme for Micro.blog.
 
 ## Installation
-- Set your current them to Blank and Hugo Version to 0.91 in the design section of your blog admin.
+- Set your current theme to Blank and Hugo Version to 0.91 in the design section of your blog admin.
 - Uninstall any theme that you already have installed.
 - Install the Card theme.
 
