@@ -232,15 +232,12 @@ form {
 
 /** Form fields */
 input[type='text'], input[type='email'] textarea[name='message'] {
+  padding: 8px;
+  border: 2px solid #CCC;
+  border-radius: 10px;
   width: 270px;
-  height: 34px;
-  font-size: 13px;
-  font-weight: 400;
-  padding-left: 12px;
-  border: 2px solid #eee;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 17px;
+  margin: 20px;
+  height: 25px;
 }
 
 form input[type='submit'], form button[type="submit"] {
@@ -249,4 +246,6 @@ form input[type='submit'], form button[type="submit"] {
   padding: 8px;
   border-radius: 8px;
   color: white;
+  min-width: 100px;
+  height: 35px;
 }
