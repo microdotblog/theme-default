@@ -231,7 +231,7 @@ form {
 }
 
 /** Subscribe */
-input[type='text'] {
+input[type='text'], textarea {
   width: 270px;
   height: 34px;
   font-size: 13px;
@@ -241,10 +241,9 @@ input[type='text'] {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 17px;
-  -webkit-appearance: none;
 }
 
-form input[type='submit'] {
+form input[type='submit'], form button[type="submit"] {
   background-color: var(--font-color-accent-secondary);
   border: 0;
   padding: 8px;

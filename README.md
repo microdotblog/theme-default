@@ -1,16 +1,10 @@
 # The Cards theme for Micro.blog
-Cards is a simple theme for Micro.blog.
+Cards is a simple and lightweight theme for Micro.blog.
 
 ## Installation
 - Set your current theme to Blank and Hugo Version to 0.91 in the design section of your blog admin.
 - Uninstall any theme that you already have installed.
 - Install the Card theme.
-
-## Change Log
-Version 1.0.0: Not yet released
-
-## License
-Cards is licensed under the MIT license.
 
 ## Support
 If you have any issues, you can email me at cardtheme@gregorich.me.
