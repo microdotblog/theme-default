@@ -213,11 +213,18 @@ div.archive_categories {
   padding-bottom: 0;
 }
 
+
 div.archive_categories p {
   padding: 8px;
   border: 1px solid var(--shadow-color);
   color: white;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  div.archive_categories {
+    display: block;
+  }
 }
 
 /** Photos */
