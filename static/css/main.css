@@ -141,6 +141,7 @@ div.photos-grid-container {
 .post-list img {
   display: block;
   margin: auto;
+  margin-top: 15px;
 }
 
 .post-header {
