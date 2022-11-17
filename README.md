@@ -1,5 +1,11 @@
 # The Cards theme for Micro.blog
-Cards is a simple and lightweight theme for Micro.blog.
+Cards is a simple and lightweight theme for Micro.blog. 
+- Posts are styled as "Cards", hence the theme name.
+- Optimized for performance, accessibility, and SEO.
+- Compatible with other plugins.
+- Easily change the theme colors from your plugin settings.
+
+![screenshot](/screenshot/home.png)
 
 ## Installation
 - Open the Design page in your Micro.blog settings.
