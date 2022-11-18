@@ -209,16 +209,24 @@ code {
 /** Categories */
 div.archive_categories {
   display: flex;
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 div.archive_categories p {
-  padding: 8px;
-  border: 1px solid var(--shadow-color);
+  margin-right: 5px;
+  background-color: var(--font-color-accent);
+  font-size: .9rem;
+  border-radius: 8px;
+  text-transform: lowercase;
+  margin-top: 20px;
+  max-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+div.archive_categories p a {
   color: white;
-  margin-right: 10px;
 }
 
 @media screen and (max-width: 480px) {
