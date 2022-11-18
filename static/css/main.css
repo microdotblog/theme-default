@@ -225,6 +225,10 @@ div.archive_categories p {
   padding-top: 5px;
 }
 
+div.archive_categories p:hover {
+  background-color: var(--font-color-accent-secondary);
+}
+
 div.archive_categories p a {
   color: white;
 }
