@@ -247,6 +247,7 @@ div.archive_categories p a {
 /** Form fields */
 input[id='input_search'],
 input[type='email'],
+input[type='text'],
 textarea[name='message'] {
   padding: 8px;
   border: 2px solid #ccc;
