@@ -236,7 +236,7 @@ div.archive_categories {
 
 div.archive_categories p {
   margin-right: 5px;
-  background-color: var(--font-color-accent);
+  background-color: var(--card-background-color);
   font-size: 0.9rem;
   border-radius: 8px;
   text-transform: lowercase;
@@ -249,11 +249,11 @@ div.archive_categories p {
 }
 
 div.archive_categories p:hover {
-  background-color: var(--body-accent-color);
+  background-color: var(--hover-color);
 }
 
 div.archive_categories p a {
-  color: white;
+  color: var(--card-accent-color);
 }
 
 @media screen and (max-width: 480px) {
