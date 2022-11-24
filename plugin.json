@@ -29,12 +29,12 @@
       "type": "color"
     },
     {
-      "field": "params.card_link_color",
-      "label": "Card Link Color",
+      "field": "params.card_accent_color",
+      "label": "Card Accent Color",
       "type": "color"
     },
     {
-      "field": "params.body_hover_color",
+      "field": "params.hover_color",
       "label": "Hover Color",
       "type": "color"
     },
