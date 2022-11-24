@@ -15,7 +15,7 @@
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-medium);
-  color: var(--body-link-color);
+  color: var(--body-text-color);
   line-height: 1.4;
   background-color: var(--body-background-color);
   margin-top: 30px;
@@ -31,7 +31,7 @@ img {
 /** Links */
 a,
 a:visited {
-  color: var(--font-color-accent);
+  color: var(--body-accent-color);
   text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ a.post-list-item-title {
 
 a.post-list-item-title:hover,
 a.post-list-item-date:hover {
-  color: var(--body-accent-color);
+  color: var(--hover-color);
 }
 
 .post-list-item-date {
