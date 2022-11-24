@@ -138,7 +138,17 @@ div.photos-grid-container {
   margin-top: 25px;
   box-shadow: 5px 5px 7px var(--shadow-color);
   background-color: var(--card-background-color);
+  color: var(--card-text-color)
 }
+
+li.post-list-item a,
+.post a,
+li.h-entry a,
+p.h-entry a,
+div.photos-grid-container a{
+  color: var(--card-accent-color)
+}
+
 
 .post-list img {
   display: block;
