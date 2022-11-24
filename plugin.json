@@ -39,11 +39,6 @@
       "type": "color"
     },
     {
-      "field": "params.secondary_color",
-      "label": "Secondary Color",
-      "type": "color"
-    },
-    {
       "field": "params.shadow_color",
       "label": "Shadow Color",
       "type": "color"
