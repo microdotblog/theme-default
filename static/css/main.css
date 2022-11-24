@@ -28,6 +28,10 @@ img {
   vertical-align: middle;
 }
 
+.post-content img {
+  border-radius: 5px;
+}
+
 /** Links */
 a,
 a:visited {
@@ -65,13 +69,18 @@ a.site-header-title-link:hover {
 
 .response-options a {
   padding: 8px;
+  color: var(--body-text-color);
   border: 1px solid var(--shadow-color);
   font-size: var(--font-size-small);
 }
 
+.response-options a:hover {
+  color: var(--body-accent-color);
+}
+
 a.site-header-title-link {
   font-size: var(--font-size-title);
-  color: var(--font-color-subtle);
+  color: var(--body-text-color);
 }
 
 .site-image {
@@ -106,7 +115,7 @@ a.site-header-title-link {
 a.site-nav-link,
 a.site-nav-link:visited {
   font-size: var(--font-size-small);
-  color: var(--body-link-color);
+  color: var(--body-text-color);
   text-decoration: underline;
 }
 
@@ -167,7 +176,7 @@ div.photos-grid-container a{
 }
 
 a.post-list-item-title {
-  color: var(--body-link-color);
+  color: var(--body-accent-color);
 }
 
 a.post-list-item-title:hover,
@@ -192,7 +201,7 @@ blockquote,
   border-right: 4px solid var(--font-color-blockquote);
   border-top: 1px solid var(--font-color-blockquote);
   border-bottom: 1px solid var(--font-color-blockquote);
-  color: var(--body-link-color);
+  color: var(--body-accent-color);
   padding: 5px 15px 15px 15px;
   background-color: #ffb90824;
   border-radius: 8px;
