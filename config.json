@@ -1,12 +1,15 @@
 {
-    "params": {
-      "description": "",
-		"text_color": "#323131",
-		"link_color": "#1756a9",
-		"hover_color": "#db4325",
-        "subtle_color": "#6F6D6D",
-        "background_color": "#ffffff",
-        "shadow_color": "#eaeaea",
-        "blockquote_color": "#dba425"
-	}
+  "params": {
+    "description": "",
+    "body_background_color": "#ffffff",
+    "body_text_color": "#323131",
+    "body_accent_color": "#1756a9",
+    "card_background_color": "#ffffff",
+    "card_text_color": "#323131",
+    "card_link_color": "#1756a9",
+    "hover_color": "#db4325",
+    "subtle_color": "#6F6D6D",
+    "shadow_color": "#eaeaea",
+    "blockquote_color": "#dba425"
+  }
 }

@@ -15,9 +15,9 @@
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-medium);
-  color: var(--font-color-text);
+  color: var(--body-link-color);
   line-height: 1.4;
-  background-color: var(--background-color);
+  background-color: var(--body-background-color);
   margin-top: 30px;
 }
 
@@ -37,7 +37,7 @@ a:visited {
 
 a:hover,
 a.site-header-title-link:hover {
-  color: var(--font-color-accent-secondary);
+  color: var(--body-accent-color);
   text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ a.site-header-title-link {
 }
 
 .rss-subscribe a {
-  color: var(--font-color-accent-secondary);
+  color: var(--body-accent-color);
 }
 
 /** Site Nav */
@@ -106,12 +106,12 @@ a.site-header-title-link {
 a.site-nav-link,
 a.site-nav-link:visited {
   font-size: var(--font-size-small);
-  color: var(--font-color-text);
+  color: var(--body-link-color);
   text-decoration: underline;
 }
 
 a.site-nav-link:hover {
-  color: var(--font-color-accent-secondary);
+  color: var(--body-accent-color);
 }
 
 /** Content */
@@ -134,10 +134,10 @@ div.photos-grid-container {
   border: 1px solid var(--shadow-color);
   list-style: none;
   border-radius: 4px;
-  background-color: #fff;
   padding: 20px;
   margin-top: 25px;
   box-shadow: 5px 5px 7px var(--shadow-color);
+  background-color: var(--card-background-color);
 }
 
 .post-list img {
@@ -157,12 +157,12 @@ div.photos-grid-container {
 }
 
 a.post-list-item-title {
-  color: var(--font-color-text);
+  color: var(--body-link-color);
 }
 
 a.post-list-item-title:hover,
 a.post-list-item-date:hover {
-  color: var(--font-color-accent-secondary);
+  color: var(--body-accent-color);
 }
 
 .post-list-item-date {
@@ -182,7 +182,7 @@ blockquote,
   border-right: 4px solid var(--font-color-blockquote);
   border-top: 1px solid var(--font-color-blockquote);
   border-bottom: 1px solid var(--font-color-blockquote);
-  color: var(--font-color-text);
+  color: var(--body-link-color);
   padding: 5px 15px 15px 15px;
   background-color: #ffb90824;
   border-radius: 8px;
@@ -214,7 +214,7 @@ div.archive_categories {
 div.archive_categories p {
   margin-right: 5px;
   background-color: var(--font-color-accent);
-  font-size: .9rem;
+  font-size: 0.9rem;
   border-radius: 8px;
   text-transform: lowercase;
   margin-top: 20px;
@@ -226,7 +226,7 @@ div.archive_categories p {
 }
 
 div.archive_categories p:hover {
-  background-color: var(--font-color-accent-secondary);
+  background-color: var(--body-accent-color);
 }
 
 div.archive_categories p a {
@@ -259,7 +259,7 @@ textarea[name='message'] {
 
 form input[type='submit'],
 form button[type='submit'] {
-  background-color: var(--font-color-accent-secondary);
+  background-color: var(--body-accent-color);
   border: 0;
   padding: 8px;
   border-radius: 8px;

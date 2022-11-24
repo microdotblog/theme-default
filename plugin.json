@@ -4,38 +4,53 @@
   "description": "A simple and lightweight theme.",
   "fields": [
     {
-      "field": "params.text_color",
-      "label": "Text color",
+      "field": "params.body_background_color",
+      "label": "Body Background Color",
       "type": "color"
     },
     {
-      "field": "params.link_color",
-      "label": "Link color",
+      "field": "params.body_text_color",
+      "label": "Body Text Color",
       "type": "color"
     },
     {
-      "field": "params.hover_color",
-      "label": "Hover color",
+      "field": "params.body_accent_color",
+      "label": "Body Accent Color",
       "type": "color"
     },
     {
-      "field": "params.subtle_color",
-      "label": "Subtle color",
+      "field": "params.card_background_color",
+      "label": "Card Background Color",
       "type": "color"
     },
     {
-      "field": "params.background_color",
-      "label": "Background color",
+      "field": "params.card_text_color",
+      "label": "Card Text Color",
+      "type": "color"
+    },
+    {
+      "field": "params.card_link_color",
+      "label": "Card Link Color",
+      "type": "color"
+    },
+    {
+      "field": "params.body_hover_color",
+      "label": "Hover Color",
+      "type": "color"
+    },
+    {
+      "field": "params.secondary_color",
+      "label": "Secondary Color",
       "type": "color"
     },
     {
       "field": "params.shadow_color",
-      "label": "Shadow color",
+      "label": "Shadow Color",
       "type": "color"
     },
     {
       "field": "params.blockquote_color",
-      "label": "Blockquote color",
+      "label": "Blockquote Color",
       "type": "color"
     }
   ]
