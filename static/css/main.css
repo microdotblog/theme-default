@@ -101,7 +101,7 @@ a.site-header-title-link {
 }
 
 .rss-subscribe a {
-  color: var(--body-accent-color);
+  color: var(--body-text-color);
 }
 
 /** Site Nav */
