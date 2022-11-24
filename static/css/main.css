@@ -104,6 +104,10 @@ a.site-header-title-link {
   color: var(--body-text-color);
 }
 
+.rss-subscribe a:hover {
+  color: var(--body-accent-color);
+}
+
 /** Site Nav */
 .site-header-nav {
   max-width: var(--width-max);
