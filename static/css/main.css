@@ -2,10 +2,10 @@
 :root {
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-size-medium: 1.1rem;
+  --font-size-medium: 1rem;
   --font-size-small: 1rem;
-  --font-size-large: 1.4rem;
-  --font-size-title: 1.2rem;
+  --font-size-large: 1.3rem;
+  --font-size-title: 1.3rem;
   --width-max: 780px;
   --width-min: 350px;
   --width-max-image: 720px;
@@ -294,6 +294,7 @@ textarea[name='message'] {
   width: 270px;
   margin: 20px;
   height: 25px;
+  font-size: var(--font-size-medium);
 }
 
 form input[type='submit'],
@@ -305,4 +306,5 @@ form button[type='submit'] {
   color: white;
   min-width: 100px;
   height: 43px;
+  font-size: var(--font-size-medium);
 }
