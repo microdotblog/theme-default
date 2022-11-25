@@ -34,8 +34,8 @@ The name of each setting should be self-explanatory. The Body colors affect the 
 - Paste the contents you copied earlier.
 - Click on the Update Template button to save your changes.
 
-## How to add your customizations
-The easiest (and safest) way to customize this theme is to create a new blank theme while the Cards theme is installed. You can customize the template files in your blank theme without changing the Cards theme.
+## How to add additional customizations
+The easiest (and safest) way to customize this theme is to create a new blank theme while the Cards theme is installed. You can customize the template files in your blank theme without changing this Cards theme.
 
 When updates are pushed out to the Cards theme, the theme files will be updated automatically. Any custom theme files you have in your custom theme will be untouched.
 
