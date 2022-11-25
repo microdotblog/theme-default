@@ -6,9 +6,9 @@
   --font-size-small: 1rem;
   --font-size-large: 1.4rem;
   --font-size-title: 1.2rem;
-  --width-max: 700px;
+  --width-max: 780px;
   --width-min: 350px;
-  --width-max-image: 660px;
+  --width-max-image: 720px;
 }
 
 /** Basic styling */
