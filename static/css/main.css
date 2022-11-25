@@ -243,7 +243,8 @@ div.archive_categories {
 
 div.archive_categories p {
   margin-right: 5px;
-  background-color: var(--card-background-color);
+  background-color: var(--hover-color);
+  border: 1px solid var(--shadow-color);
   font-size: 0.9rem;
   border-radius: 8px;
   text-transform: lowercase;
@@ -256,10 +257,18 @@ div.archive_categories p {
 }
 
 div.archive_categories p:hover {
-  background-color: var(--hover-color);
+  background-color: var(---hover-color);
+}
+
+div.archive_categories p:hover a {
+  color: var(--card-accent-color);
 }
 
 div.archive_categories p a {
+  color: white;
+}
+
+div.archive_categories p a:hover {
   color: var(--card-accent-color);
 }
 
