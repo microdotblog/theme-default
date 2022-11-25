@@ -1,7 +1,7 @@
 {
-  "version": "1.0.3",
-  "title": "Cards",
-  "description": "A simple and lightweight theme.",
+  "version": "1.0.4",
+  "title": "Cards Theme",
+  "description": "A simple and lightweight Micro.blog theme.",
   "fields": [
     {
       "field": "params.body_background_color",
