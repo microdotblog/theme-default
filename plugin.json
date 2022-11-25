@@ -5,57 +5,57 @@
   "fields": [
     {
       "field": "params.body_background_color",
-      "label": "Body Background Color",
+      "label": "Body Background",
       "type": "color"
     },
     {
       "field": "params.body_text_color",
-      "label": "Body Text Color",
+      "label": "Body Text",
       "type": "color"
     },
     {
       "field": "params.body_accent_color",
-      "label": "Body Accent Color",
+      "label": "Body Accent",
       "type": "color"
     },
     {
       "field": "params.card_background_color",
-      "label": "Card Background Color",
+      "label": "Card Background",
       "type": "color"
     },
     {
       "field": "params.card_text_color",
-      "label": "Card Text Color",
+      "label": "Card Text",
       "type": "color"
     },
     {
       "field": "params.card_accent_color",
-      "label": "Card Accent Color",
+      "label": "Card Accent",
       "type": "color"
     },
     {
       "field": "params.hover_color",
-      "label": "Hover Color",
+      "label": "Hover",
       "type": "color"
     },
     {
       "field": "params.secondary_color",
-      "label": "Secondary Color",
+      "label": "Secondary",
       "type": "color"
     },
     {
       "field": "params.shadow_color",
-      "label": "Shadow Color",
+      "label": "Shadow",
       "type": "color"
     },
     {
       "field": "params.blockquote_color",
-      "label": "Blockquote Color",
+      "label": "Blockquote",
       "type": "color"
     },
     {
       "field": "params.blockquote_border",
-      "label": "Blockquote Border Color",
+      "label": "Blockquote Border",
       "type": "color"
     }
   ]
