@@ -39,6 +39,11 @@
       "type": "color"
     },
     {
+      "field": "params.secondary_color",
+      "label": "Secondary Color",
+      "type": "color"
+    },
+    {
       "field": "params.shadow_color",
       "label": "Shadow Color",
       "type": "color"
@@ -46,6 +51,11 @@
     {
       "field": "params.blockquote_color",
       "label": "Blockquote Color",
+      "type": "color"
+    },
+    {
+      "field": "params.blockquote_border",
+      "label": "Blockquote Border Color",
       "type": "color"
     }
   ]

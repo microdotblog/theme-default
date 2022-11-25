@@ -8,8 +8,9 @@
     "card_text_color": "#323131",
     "card_link_color": "#1756a9",
     "hover_color": "#db4325",
-    "subtle_color": "#6F6D6D",
+    "secondary_color": "#6F6D6D",
     "shadow_color": "#eaeaea",
-    "blockquote_color": "#dba425"
+    "blockquote_color": "#ffb90824",
+    "blockquote_border": "#dba425"
   }
 }

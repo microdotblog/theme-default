@@ -195,19 +195,19 @@ a.post-list-item-date:hover {
 }
 
 a.post-list-item-date {
-  color: var(--font-color-subtle);
+  color: var(--font-color-secondary);
 }
 
 /** Blockquotes */
 blockquote,
 .microblog_email blockquote {
-  border-left: 4px solid var(--font-color-blockquote);
-  border-right: 4px solid var(--font-color-blockquote);
-  border-top: 1px solid var(--font-color-blockquote);
-  border-bottom: 1px solid var(--font-color-blockquote);
-  color: var(--body-accent-color);
+  border-left: 4px solid var(--blockquote-border);
+  border-right: 4px solid var(--blockquote-border);
+  border-top: 1px solid var(--blockquote-border);
+  border-bottom: 1px solid var(--blockquote-border);
+  color: var(--card-text-color);
   padding: 5px 15px 15px 15px;
-  background-color: #ffb90824;
+  background-color: var(--blockquote);
   border-radius: 8px;
   margin-left: 0px;
   margin-right: 0px;
