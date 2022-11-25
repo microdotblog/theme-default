@@ -3,14 +3,15 @@
     "description": "",
     "body_background_color": "#ffffff",
     "body_text_color": "#323131",
-    "body_accent_color": "#1756a9",
+    "body_accent_color": "#0f8dc2",
     "card_background_color": "#ffffff",
     "card_text_color": "#323131",
     "card_link_color": "#1756a9",
     "hover_color": "#db4325",
-    "secondary_color": "#6F6D6D",
+    "secondary_color": "#6f6d6d",
     "shadow_color": "#eaeaea",
     "blockquote_color": "#f8edc3",
-    "blockquote_border": "#dba425"
+    "blockquote_border": "#dba425",
+    "card_accent_color": "#108dc2"
   }
 }
