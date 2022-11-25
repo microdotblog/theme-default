@@ -162,6 +162,14 @@ div.photos-grid-container a {
   color: var(--card-accent-color);
 }
 
+li.post-list-item a:hover,
+.post a:hover,
+li.h-entry a:hover,
+p.h-entry a:hover,
+div.photos-grid-container a:hover {
+  color: var(--hover-color);
+}
+
 .post-list img {
   display: block;
   margin: auto;
