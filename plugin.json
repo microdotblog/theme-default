@@ -57,6 +57,11 @@
       "field": "params.blockquote_border",
       "label": "Blockquote Border",
       "type": "color"
+    },
+    {
+      "field": "params.blockquote_text",
+      "label": "Blockquote Text",
+      "type": "color"
     }
   ]
 }

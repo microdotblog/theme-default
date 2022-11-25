@@ -212,7 +212,7 @@ blockquote,
   border-right: 4px solid var(--blockquote-border);
   border-top: 1px solid var(--blockquote-border);
   border-bottom: 1px solid var(--blockquote-border);
-  color: var(--card-text-color);
+  color: var(--blockquote-text);
   padding: 5px 15px 15px 15px;
   background-color: var(--blockquote);
   border-radius: 8px;
