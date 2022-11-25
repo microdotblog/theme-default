@@ -10,7 +10,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M0DLOZR)
 
 ## Support
-Email me from this [form] if you have any issues. I'll help the best I can.
+Email me from this [form](https://ericgregorich.com/email/) if you have any issues. I'll help the best I can.
 
 ## Installation
 - Open the Design page in your Micro.blog settings.
@@ -55,7 +55,10 @@ If you want to add a link to your post where visitors can reply from Micro.blog,
     -   Select the layouts/post/single.html file.
     -   Insert this code snippet into your page. After the {{ .Content }} text works well.
 
+```html
 <div class="response-options">{{ partial "conversation-link.html" . }}</div>
+```
+
 - Click Update Template to save your changes.
 
 ## How to add a reply by email option to your posts
@@ -74,13 +77,17 @@ If you want to add a link to your post where visitors can reply to the post usin
 	- Select the layouts/post/single.html file.
 	- Insert this code snippet into your page. After the {{ .Content }} text works well.
 
+```html
 <div class="response-options">{{ partial "reply-by-email.html" . }}</div>
+```
 
  - Click Update Template to save your changes.
 
 > If you’re also using both plugins (Conversation and Reply by email), you can put them together by adding this code block. Whether using one or both plugins, add your partial text inside the response-options Div tag to receive automatic styling matching this theme.
 
+```html
 <div class="response-options">
 	{{ partial "conversation-link.html" . }}
 	{{ partial "reply-by-email.html" . }}
 </div>
+```
