@@ -217,7 +217,7 @@ blockquote,
   color: var(--blockquote-text);
   padding: 5px 15px 15px 15px;
   background-color: var(--blockquote);
-  border-radius: 5px;
+  border-radius: 10px;
   margin-left: 0px;
   margin-right: 0px;
 }
