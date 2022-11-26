@@ -148,7 +148,7 @@ p.h-entry,
 div.photos-grid-container {
   border: 1px solid var(--shadow-color);
   list-style: none;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 20px;
   margin-top: 25px;
   box-shadow: 5px 5px 7px var(--shadow-color);
@@ -217,7 +217,7 @@ blockquote,
   color: var(--blockquote-text);
   padding: 5px 15px 15px 15px;
   background-color: var(--blockquote);
-  border-radius: 10px;
+  border-radius: 5px;
   margin-left: 0px;
   margin-right: 0px;
 }
