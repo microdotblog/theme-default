@@ -1,10 +1,10 @@
-name = "Cards"
+name = "Cards Theme"
 license = "MIT"
 licenselink = "https://github.com/ericgregorich/micro-blog-cards-theme/blob/master/LICENSE"
 description = "A simple and lightweight Micro.blog theme based on cards."
-homepage = "https://github.com/ericgregorich/micro-blog-cards-theme.git"
+homepage = "https://github.com/ericgregorich/micro-blog-cards-theme"
 tags = ["theme", "responsive", "simple", "cards", "blog"]
-features = ["Posts are styled as Cards, hence the theme name.", "Optimized for performance, accessibility, and SEO", "Compatible with other plugins","Easily change the theme colors from your plugin settings"]
+features = ["customizable", "optimized", "SEO"]
 min_version = "0.91"
 [author]
     name = "Eric Gregorich"
