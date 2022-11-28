@@ -5,7 +5,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 - Compatible with other plugins.
 - Easily change the theme colors from your plugin settings.
 
-!["Card Theme Samples"](screenshot/Card%20Theme%20Samples.png)
+!["Card Theme Samples"](screenshot.png)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M0DLOZR)
 
