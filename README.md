@@ -12,6 +12,9 @@ Cards is a simple and lightweight theme for Micro.blog.
 ## Support
 Email me from this [form](https://ericgregorich.com/email/) if you have any issues. I'll help the best I can.
 
+## Change Log
+- 2022-12-03: Minor CSS fixes. Remvoed custom 404 page since it can be added as a page through the UI.
+
 ## Installation
 - Open the Design page in your Micro.blog settings.
 - Set your current theme to Blank and Hugo Version to 0.91 in the design section of your blog admin.
