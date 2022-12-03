@@ -13,7 +13,7 @@
 
 /** Basic styling */
 body {
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s;
   font-family: var(--font-family);
   font-size: var(--font-size-medium);
