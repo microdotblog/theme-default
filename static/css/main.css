@@ -248,7 +248,6 @@ div.archive_categories {
 div.archive_categories p 
 {
   margin-right: 5px;
-  background-color: var(--card-background-color);
   line-height: 10px;
 }
 
