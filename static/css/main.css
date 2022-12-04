@@ -239,22 +239,22 @@ code {
 
 /** Categories */
 div.archive_categories {
-  display: flex;
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 20px;
+    justify-content: center;
 }
 
 div.archive_categories p {
   margin-right: 5px;
   background-color: var(--hover-color);
   border: 1px solid var(--shadow-color);
+  box-shadow: 2px 2px 2px var(--shadow-color);
   font-size: 0.9rem;
-  border-radius: 8px;
+  border-radius: 5px;
   text-transform: lowercase;
-  margin-top: 20px;
-  max-width: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding: 8px;
+  line-height: 10px;
 }
 
 div.archive_categories p:hover {
@@ -271,12 +271,6 @@ div.archive_categories p a {
 
 div.archive_categories p a:hover {
   color: var(--card-accent-color);
-}
-
-@media screen and (max-width: 480px) {
-  div.archive_categories {
-    display: block;
-  }
 }
 
 /** Photos */
