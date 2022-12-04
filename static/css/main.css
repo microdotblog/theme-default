@@ -239,39 +239,34 @@ code {
 
 /** Categories */
 div.archive_categories {
-    display: flex;
-    flex-flow: wrap;
-    margin-top: 20px;
-    justify-content: center;
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 20px;
+  justify-content: center;
 }
 
-div.archive_categories p {
+div.archive_categories p 
+{
   margin-right: 5px;
-  background-color: var(--hover-color);
-  border: 1px solid var(--shadow-color);
-  box-shadow: 2px 2px 2px var(--shadow-color);
+  background-color: var(--card-background-color);
+  line-height: 10px;
+}
+
+div.archive_categories p a {
+  color: var(--card-accent-color);
+  margin-right: 5px;
+  background-color: var(--card-background-color);
+  border: 1px solid var(--body-accent-color);
+  box-shadow: 2px 2px 4px var(--shadow-color);
   font-size: 0.9rem;
   border-radius: 5px;
   text-transform: lowercase;
   padding: 8px;
-  line-height: 10px;
 }
 
-div.archive_categories p:hover {
-  background-color: var(--body-accent-color);
-  color: var(--body-text-color);
-}
-
-div.archive_categories p:hover a {
-  color: var(--body-text-color);
-}
-
-div.archive_categories p a {
-  color: white;
-}
 
 div.archive_categories p a:hover {
-  color: var(--card-accent-color);
+  color: var(--hover-color);
 }
 
 /** Photos */
