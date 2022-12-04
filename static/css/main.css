@@ -258,11 +258,12 @@ div.archive_categories p {
 }
 
 div.archive_categories p:hover {
-  background-color: var(---hover-color);
+  background-color: var(--body-accent-color);
+  color: var(--body-text-color);
 }
 
 div.archive_categories p:hover a {
-  color: var(--card-accent-color);
+  color: var(--body-text-color);
 }
 
 div.archive_categories p a {
