@@ -13,8 +13,6 @@
 
 /** Basic styling */
 body {
-  opacity: 0;
-  transition: opacity 0.5s;
   font-family: var(--font-family);
   font-size: var(--font-size-medium);
   color: var(--body-text-color);
@@ -86,7 +84,7 @@ a.site-header-title-link {
 }
 
 .site-image {
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 /** Site Footer */
@@ -245,10 +243,8 @@ div.archive_categories {
   justify-content: center;
 }
 
-div.archive_categories p 
-{
+div.archive_categories p {
   margin-right: 5px;
-  line-height: 10px;
 }
 
 div.archive_categories p a {
@@ -258,11 +254,10 @@ div.archive_categories p a {
   border: 1px solid var(--body-accent-color);
   box-shadow: 2px 2px 4px var(--shadow-color);
   font-size: 0.9rem;
-  border-radius: 5px;
+  border-radius: 2px;
   text-transform: lowercase;
-  padding: 8px;
+  padding: 2px 8px 4px 8px;
 }
-
 
 div.archive_categories p a:hover {
   color: var(--hover-color);
