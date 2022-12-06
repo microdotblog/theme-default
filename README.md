@@ -13,6 +13,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 Email me from this [form](https://ericgregorich.com/email/) if you have any issues. I'll help the best I can.
 
 ## Change Log
+- 2022-12-06 v1.1.0 Minor CSS fixes. Rounded logo. Tag updates.
 - 2022-12-04 v1.0.9: Minor CSS fixes for tags on archive page. Now responsive.
 - 2022-12-03 v1.0.8: Minor CSS fixes. Removed custom 404 page since it can be added as a page through the UI.
 
