@@ -6,32 +6,70 @@
   </label>
   🌛
 </div>
+<script type="text/javascript">
+  const toggleSwitch = document.querySelector(
+    '.theme-switch input[type="checkbox"]'
+  )
+
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light')
+    }
+  }
+
+  toggleSwitch.addEventListener('change', switchTheme, false)
+
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+      localStorage.setItem('theme', 'dark')
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light')
+      localStorage.setItem('theme', 'light')
+    }
+  }
+
+  const currentTheme = localStorage.getItem('theme')
+    ? localStorage.getItem('theme')
+    : null
+
+  if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme)
+
+    if (currentTheme === 'dark') {
+      toggleSwitch.checked = true
+    }
+  }
+</script>
+
 <header class="site-header">
-<div class="site-header-logo">
-<a class="site-header-logo-link" href="/"
-  ><img
-    src="{{ .Site.Author.avatar }}"
-    class="site-image"
-    alt="{{ .Site.Title }}"
-    width="75px"
-/></a>
-</div>
-<div class="site-header-title">
-<a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
-</div>
-<div class="site-header-nav">
-<nav class="site-nav">
-  <div class="site-nav-trigger">
-    {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
-    <a class="site-nav-link" href="{{ .Page.Params.redirect }}"
-      >{{ .Name }}</a
-    >
-    {{ else }}
-    <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
-      >{{ .Name }}</a
-    >
-    {{ end }} {{ end }}
+  <div class="site-header-logo">
+    <a class="site-header-logo-link" href="/"
+      ><img
+        src="{{ .Site.Author.avatar }}"
+        class="site-image"
+        alt="{{ .Site.Title }}"
+        width="75px"
+    /></a>
   </div>
-</nav>
-</div>
+  <div class="site-header-title">
+    <a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
+  </div>
+  <div class="site-header-nav">
+    <nav class="site-nav">
+      <div class="site-nav-trigger">
+        {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
+        <a class="site-nav-link" href="{{ .Page.Params.redirect }}"
+          >{{ .Name }}</a
+        >
+        {{ else }}
+        <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
+          >{{ .Name }}</a
+        >
+        {{ end }} {{ end }}
+      </div>
+    </nav>
+  </div>
 </header>
