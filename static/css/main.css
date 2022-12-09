@@ -298,12 +298,14 @@ form button[type='submit'] {
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+  float: right;
 }
+
 .theme-switch {
   display: inline-block;
-  height: 34px;
+  height: /* 34*/ 16px;
   position: relative;
-  width: 60px;
+  width: 30px;
 }
 
 .theme-switch input {
@@ -316,34 +318,43 @@ form button[type='submit'] {
   cursor: pointer;
   left: 0;
   position: absolute;
-  right: 0;
+  right: -4px;
   top: 0;
   transition: .4s;
 }
 
 .slider:before {
   background-color: #fff;
-  bottom: 4px;
+  bottom: 2px;
   content: "";
-  height: 26px;
+  height: 13px;
   left: 4px;
   position: absolute;
   transition: .4s;
-  width: 26px;
+  width: 13px;
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-color: #99E9F2;
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(13px);
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 16px;
 }
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/** Theme switcher*/
+.site-theme-switcher {
+  margin-top: 20px;
+  max-width: var(--width-max);
+  min-width: var(--width-min);
+  margin: auto;
+  text-align: center;
 }

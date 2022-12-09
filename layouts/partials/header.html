@@ -1,35 +1,37 @@
+<div class="theme-switch-wrapper">
+  🌞
+  <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <div class="slider round"></div>
+  </label>
+  🌛
+</div>
 <header class="site-header">
-  <div class="site-header-logo">
-    <a class="site-header-logo-link" href="/"
-      ><img
-        src="{{ .Site.Author.avatar }}"
-        class="site-image"
-        alt="{{ .Site.Title }}"
-        width="75px"
-    /></a>
-    <div class="theme-switch-wrapper">
-      <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-    </label>
+<div class="site-header-logo">
+<a class="site-header-logo-link" href="/"
+  ><img
+    src="{{ .Site.Author.avatar }}"
+    class="site-image"
+    alt="{{ .Site.Title }}"
+    width="75px"
+/></a>
+</div>
+<div class="site-header-title">
+<a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
+</div>
+<div class="site-header-nav">
+<nav class="site-nav">
+  <div class="site-nav-trigger">
+    {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
+    <a class="site-nav-link" href="{{ .Page.Params.redirect }}"
+      >{{ .Name }}</a
+    >
+    {{ else }}
+    <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
+      >{{ .Name }}</a
+    >
+    {{ end }} {{ end }}
   </div>
-  </div>
-  <div class="site-header-title">
-    <a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
-  </div>
-  <div class="site-header-nav">
-    <nav class="site-nav">
-      <div class="site-nav-trigger">
-        {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
-        <a class="site-nav-link" href="{{ .Page.Params.redirect }}"
-          >{{ .Name }}</a
-        >
-        {{ else }}
-        <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
-          >{{ .Name }}</a
-        >
-        {{ end }} {{ end }}
-      </div>
-    </nav>
-  </div>
+</nav>
+</div>
 </header>
