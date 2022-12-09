@@ -1,16 +1,64 @@
 <style>
   :root {
-    --body-background-color: {{ .Site.Params.body_background_color }};
-    --body-text-color: {{ .Site.Params.body_text_color }};
-    --body-accent-color: {{ .Site.Params.body_accent_color }};
-    --card-background-color: {{ .Site.Params.card_background_color }};
-    --card-text-color: {{ .Site.Params.card_text_color }};
-    --card-accent-color: {{ .Site.Params.card_accent_color }};
-    --hover-color: {{ .Site.Params.hover_color }};
-    --font-color-secondary: {{ .Site.Params.secondary_color }};
-    --blockquote: {{ .Site.Params.blockquote_color }};
-    --blockquote-border: {{ .Site.Params.blockquote_border }};
-    --blockquote-text: {{ .Site.Params.blockquote_text }};
-    --shadow-color: {{ .Site.Params.shadow_color }};
+    --body-background-color: {{ .Site.Params.light_body_background_color }};
+    --body-text-color: {{ .Site.Params.light_body_text_color }};
+    --body-accent-color: {{ .Site.Params.light_body_accent_color }};
+    --card-background-color: {{ .Site.Params.light_card_background_color }};
+    --card-text-color: {{ .Site.Params.light_card_text_color }};
+    --card-accent-color: {{ .Site.Params.light_card_accent_color }};
+    --hover-color: {{ .Site.Params.light_hover_color }};
+    --blockquote: {{ .Site.Params.light_blockquote_color }};
+    --blockquote-border: {{ .Site.Params.light_blockquote_border }};
+    --blockquote-text: {{ .Site.Params.light_blockquote_text }};
+    --shadow-color: {{ .Site.Params.light_shadow_color }};
+  }
+
+  [data-theme="dark"] {
+    --body-background-color: {{ .Site.Params.dark_body_background_color }};
+    --body-text-color: {{ .Site.Params.dark_body_text_color }};
+    --body-accent-color: {{ .Site.Params.dark_body_accent_color }};
+    --card-background-color: {{ .Site.Params.dark_card_background_color }};
+    --card-text-color: {{ .Site.Params.dark_card_text_color }};
+    --card-accent-color: {{ .Site.Params.dark_card_accent_color }};
+    --hover-color: {{ .Site.Params.dark_hover_color }};
+    --blockquote: {{ .Site.Params.dark_blockquote_color }};
+    --blockquote-border: {{ .Site.Params.dark_blockquote_border }};
+    --blockquote-text: {{ .Site.Params.dark_blockquote_text }};
+    --shadow-color: {{ .Site.Params.dark_shadow_color }};
   }
 </style>
+
+<script>
+  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+  function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+  }
+
+  toggleSwitch.addEventListener('change', switchTheme, false);
+
+  function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); //add this
+    }    
+  }
+
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+  if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      if (currentTheme === 'dark') {
+          toggleSwitch.checked = true;
+      }
+  }
+</script>

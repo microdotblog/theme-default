@@ -4,63 +4,113 @@
   "description": "A simple and customizable Micro.blog theme.",
   "fields": [
     {
-      "field": "params.body_background_color",
-      "label": "Body Background",
+      "field": "params.light_body_background_color",
+      "label": "(Light Theme) Body Background",
       "type": "color"
     },
     {
-      "field": "params.body_text_color",
-      "label": "Body Text",
+      "field": "params.light_body_text_color",
+      "label": "(Light Theme) Body Text",
       "type": "color"
     },
     {
-      "field": "params.body_accent_color",
-      "label": "Body Accent",
+      "field": "params.light_body_accent_color",
+      "label": "(Light Theme) Body Accent",
       "type": "color"
     },
     {
-      "field": "params.card_background_color",
-      "label": "Card Background",
+      "field": "params.light_card_background_color",
+      "label": "(Light Theme) Card Background",
       "type": "color"
     },
     {
-      "field": "params.card_text_color",
-      "label": "Card Text",
+      "field": "params.light_card_text_color",
+      "label": "(Light Theme) Card Text",
       "type": "color"
     },
     {
-      "field": "params.card_accent_color",
-      "label": "Card Accent",
+      "field": "params.light_card_accent_color",
+      "label": "(Light Theme) Card Accent",
       "type": "color"
     },
     {
-      "field": "params.hover_color",
-      "label": "Hover",
+      "field": "params.light_hover_color",
+      "label": "(Light Theme) Hover",
       "type": "color"
     },
     {
-      "field": "params.secondary_color",
-      "label": "Secondary",
+      "field": "params.light_shadow_color",
+      "label": "(Light Theme)Shadow",
       "type": "color"
     },
     {
-      "field": "params.shadow_color",
-      "label": "Shadow",
+      "field": "params.light_blockquote_color",
+      "label": "(Light Theme) Blockquote",
       "type": "color"
     },
     {
-      "field": "params.blockquote_color",
-      "label": "Blockquote",
+      "field": "params.light_blockquote_border",
+      "label": "(Light Theme) Blockquote Border",
       "type": "color"
     },
     {
-      "field": "params.blockquote_border",
-      "label": "Blockquote Border",
+      "field": "params.light_blockquote_text",
+      "label": "(Light Theme) Blockquote Text",
       "type": "color"
     },
     {
-      "field": "params.blockquote_text",
-      "label": "Blockquote Text",
+      "field": "params.dark_body_background_color",
+      "label": "(Dark Theme) Body Background",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_body_text_color",
+      "label": "(Dark Theme) Body Text",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_body_accent_color",
+      "label": "(Dark Theme) Body Accent",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_card_background_color",
+      "label": "(Dark Theme) Card Background",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_card_text_color",
+      "label": "(Dark Theme) Card Text",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_card_accent_color",
+      "label": "(Dark Theme) Card Accent",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_hover_color",
+      "label": "(Dark Theme) Hover",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_shadow_color",
+      "label": "(Dark Theme)Shadow",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_blockquote_color",
+      "label": "(Dark Theme) Blockquote",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_blockquote_border",
+      "label": "(Dark Theme) Blockquote Border",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_blockquote_text",
+      "label": "(Dark Theme) Blockquote Text",
       "type": "color"
     }
   ]
