@@ -298,11 +298,6 @@ form button[type='submit'] {
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
 }
 .theme-switch {
   display: inline-block;
@@ -352,4 +347,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
