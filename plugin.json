@@ -5,112 +5,117 @@
   "fields": [
     {
       "field": "params.light_body_background_color",
-      "label": "(Light Theme) Body Background",
+      "label": "(Light) Body Background",
       "type": "color"
     },
     {
       "field": "params.light_body_text_color",
-      "label": "(Light Theme) Body Text",
+      "label": "(Light) Body Text",
       "type": "color"
     },
     {
       "field": "params.light_body_accent_color",
-      "label": "(Light Theme) Body Accent",
+      "label": "(Light) Body Accent",
       "type": "color"
     },
     {
       "field": "params.light_card_background_color",
-      "label": "(Light Theme) Card Background",
+      "label": "(Light) Card Background",
       "type": "color"
     },
     {
       "field": "params.light_card_text_color",
-      "label": "(Light Theme) Card Text",
+      "label": "(Light) Card Text",
       "type": "color"
     },
     {
       "field": "params.light_card_accent_color",
-      "label": "(Light Theme) Card Accent",
+      "label": "(Light) Card Accent",
       "type": "color"
     },
     {
       "field": "params.light_hover_color",
-      "label": "(Light Theme) Hover",
+      "label": "(Light) Hover",
       "type": "color"
     },
     {
       "field": "params.light_shadow_color",
-      "label": "(Light Theme)Shadow",
+      "label": "(Light)Shadow",
       "type": "color"
     },
     {
       "field": "params.light_blockquote_color",
-      "label": "(Light Theme) Blockquote",
+      "label": "(Light) Blockquote",
       "type": "color"
     },
     {
       "field": "params.light_blockquote_border",
-      "label": "(Light Theme) Blockquote Border",
+      "label": "(Light) Blockquote Border",
       "type": "color"
     },
     {
       "field": "params.light_blockquote_text",
-      "label": "(Light Theme) Blockquote Text",
+      "label": "(Light) Blockquote Text",
       "type": "color"
     },
     {
+      "field": "params.usedarktheme",
+      "label": "Enable Dark Theme Toggle? This will alternate between the colors above and the colors below.",
+      "type": "boolean"
+    },
+    {
       "field": "params.dark_body_background_color",
-      "label": "(Dark Theme) Body Background",
+      "label": "(Dark) Body Background",
       "type": "color"
     },
     {
       "field": "params.dark_body_text_color",
-      "label": "(Dark Theme) Body Text",
+      "label": "(Dark) Body Text",
       "type": "color"
     },
     {
       "field": "params.dark_body_accent_color",
-      "label": "(Dark Theme) Body Accent",
+      "label": "(Dark) Body Accent",
       "type": "color"
     },
     {
       "field": "params.dark_card_background_color",
-      "label": "(Dark Theme) Card Background",
+      "label": "(Dark) Card Background",
       "type": "color"
     },
     {
       "field": "params.dark_card_text_color",
-      "label": "(Dark Theme) Card Text",
+      "label": "(Dark) Card Text",
       "type": "color"
     },
     {
       "field": "params.dark_card_accent_color",
-      "label": "(Dark Theme) Card Accent",
+      "label": "(Dark) Card Accent",
       "type": "color"
     },
     {
       "field": "params.dark_hover_color",
-      "label": "(Dark Theme) Hover",
+      "label": "(Dark) Hover",
       "type": "color"
     },
     {
       "field": "params.dark_shadow_color",
-      "label": "(Dark Theme)Shadow",
+      "label": "(Dark) Shadow",
       "type": "color"
     },
     {
       "field": "params.dark_blockquote_color",
-      "label": "(Dark Theme) Blockquote",
+      "label": "(Dark) Blockquote",
       "type": "color"
     },
     {
       "field": "params.dark_blockquote_border",
-      "label": "(Dark Theme) Blockquote Border",
+      "label": "(Dark) Blockquote Border",
       "type": "color"
     },
     {
       "field": "params.dark_blockquote_text",
-      "label": "(Dark Theme) Blockquote Text",
+      "label": "(Dark) Blockquote Text",
       "type": "color"
     }
   ]

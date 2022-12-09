@@ -2,10 +2,10 @@
 :root {
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-size-medium: 1rem;
+  --font-size-normal: 1.1rem;
   --font-size-small: 1rem;
-  --font-size-large: 1.3rem;
-  --font-size-title: 1.3rem;
+  --font-size-large: 1.5rem;
+  --font-size-title: 1.5rem;
   --width-max: 780px;
   --width-min: 350px;
   --width-max-image: 720px;
@@ -14,11 +14,23 @@
 /** Basic styling */
 body {
   font-family: var(--font-family);
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-normal);
   color: var(--body-text-color);
   line-height: 1.4;
   background-color: var(--body-background-color);
   margin-top: 30px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 /** Images */
@@ -274,12 +286,12 @@ input[type='email'],
 input[type='text'],
 textarea[name='message'] {
   padding: 8px;
-  border: 2px solid #ccc;
+  border: 2px solid var(--shadow-color);
   border-radius: 10px;
   width: 270px;
   margin: 20px;
   height: 25px;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-normal);
 }
 
 form input[type='submit'],
@@ -291,7 +303,7 @@ form button[type='submit'] {
   color: white;
   min-width: 100px;
   height: 43px;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-normal);
 }
 
 /*Simple css to style it like a toggle switch*/
@@ -309,7 +321,7 @@ form button[type='submit'] {
 }
 
 .theme-switch input {
-  display:none;
+  display: none;
 }
 
 .slider {
@@ -320,22 +332,22 @@ form button[type='submit'] {
   position: absolute;
   right: -4px;
   top: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
   background-color: #fff;
   bottom: 2px;
-  content: "";
+  content: '';
   height: 13px;
   left: 4px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   width: 13px;
 }
 
 input:checked + .slider {
-  background-color: #99E9F2;
+  background-color: #99e9f2;
 }
 
 input:checked + .slider:before {
