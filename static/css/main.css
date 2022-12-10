@@ -113,11 +113,11 @@ a.site-header-title-link {
 }
 
 .rss-subscribe a {
-  color: var(--body-text-color);
+  color: var(--body-accent-color);
 }
 
 .rss-subscribe a:hover {
-  color: var(--body-accent-color);
+  color: var(--hover-color);
 }
 
 /** Site Nav */
