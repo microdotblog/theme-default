@@ -311,7 +311,7 @@ form button[type='submit'] {
   text-align: center;
 }
 
-.pagination span {
+.pagination .prev, .pagination .next{
   padding: 30px;
 }
 
