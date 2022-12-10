@@ -33,6 +33,10 @@ h3 {
   font-size: 1.2rem;
 }
 
+.post-list-title {
+  text-align: center;
+}
+
 /** Images */
 img {
   max-width: 100%;
@@ -319,6 +323,7 @@ form button[type='submit'] {
 .pagination .prev a:hover, .pagination .next a:hover {
   color: var(--hover-color);
 }
+
 
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
