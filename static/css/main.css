@@ -306,6 +306,15 @@ form button[type='submit'] {
   font-size: var(--font-size-normal);
 }
 
+/** Pagination */
+.pagination {
+  text-align: center;
+}
+
+.pagination span {
+  padding: 30px;
+}
+
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
   display: flex;
