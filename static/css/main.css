@@ -315,6 +315,10 @@ form button[type='submit'] {
   padding: 30px;
 }
 
+.pagination .prev a:hover, .pagination .next a:hover {
+  color: var(--hover-color);
+}
+
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
   display: flex;
