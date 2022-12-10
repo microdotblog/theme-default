@@ -309,6 +309,7 @@ form button[type='submit'] {
 /** Pagination */
 .pagination {
   text-align: center;
+  padding: 30px 0px 10px 0px;
 }
 
 .pagination .prev, .pagination .next{
