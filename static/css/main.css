@@ -311,7 +311,7 @@ form button[type='submit'] {
   display: flex;
 position: absolute;
   align-items: center;
-right:10px;
+right:20px;
 }
 
 .theme-switch {
