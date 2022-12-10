@@ -309,8 +309,9 @@ form button[type='submit'] {
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
   display: flex;
+position: absolute;
   align-items: center;
-  float: right;
+right:10px;
 }
 
 .theme-switch {
