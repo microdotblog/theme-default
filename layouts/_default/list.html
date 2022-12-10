@@ -21,6 +21,7 @@
   <p class="rss-subscribe"><a href="{{ "feed.xml" | absURL }}">RSS</a></p>
 
 </div>
+<div class="pagination">
 {{ if .IsHome }}
 	{{ if .Site.Params.paginate_home }}
 		{{ partial "pagination" . }}
@@ -28,4 +29,5 @@
 {{ else if .Site.Params.paginate_categories }}
 	{{ partial "pagination" . }}
 {{ end }}
+</div>
 {{ end }}
