@@ -244,10 +244,10 @@ blockquote {
 /** Code */
 code {
   white-space: pre-wrap !important;
+  overflow-wrap: break-word;
 }
 
 .highlight pre {
-  overflow-wrap: break-word;
   padding: 10px;
   font-size: var(--font-size-small);
 }
