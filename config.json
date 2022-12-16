@@ -22,6 +22,7 @@
     "dark_blockquote_color": "#f8eec4",
     "dark_blockquote_border": "#d6a32e",
     "dark_blockquote_text": "#2a2a2b",
-    "usedarktheme": true
+    "usedarktheme": true,
+    "showReadingTime": true
   }
 }
