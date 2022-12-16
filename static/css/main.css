@@ -37,6 +37,10 @@ h3 {
   text-align: center;
 }
 
+.post-meta {
+  font-size: var(--font-size-small);
+ }
+
 /** Images */
 img {
   max-width: 100%;
@@ -77,17 +81,20 @@ a.site-header-title-link:hover {
 
 /** Response Options */
 .response-options {
-  text-align: center;
-  border-radius: 15px;
   margin-top: 30px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .response-options a {
-  padding: 8px;
+  padding: 6px 8px 4px 8px;
   color: var(--body-text-color);
   border: 1px solid var(--shadow-color);
-  font-size: var(--font-size-small);
+  font-size: .8rem;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: var(--card-background-color);
 }
 
 .response-options a:hover {

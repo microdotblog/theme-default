@@ -4,6 +4,11 @@
   "description": "A simple and customizable Micro.blog theme.",
   "fields": [
     {
+      "field": "params.showReadingTime",
+      "label": "Show Reading Time on posts greater than 1 minute?",
+      "type": "boolean"
+    },
+    {
       "field": "params.light_body_background_color",
       "label": "(Light) Body Background",
       "type": "color"

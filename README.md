@@ -4,6 +4,8 @@ Cards is a simple and lightweight theme for Micro.blog.
 - Optimized for performance, accessibility, and SEO.
 - Compatible with other plugins.
 - Easily change the theme colors from your plugin settings.
+- A toggle to allow visitors to toggle between light and dark mode.
+- An option to enable Reading Time on posts greater than 1 minute long.
 
 !["Card Theme Samples"](https://raw.githubusercontent.com/ericgregorich/micro-blog-cards-theme/master/screenshot.png)
 

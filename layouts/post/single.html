@@ -7,6 +7,9 @@
   	{{ end }}
     <p class="post-meta">
 	<time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+	{{ if .Site.Params.showReadingTime }}
+		{{ if gt .ReadingTime 1 }} Reading Time: {{ .ReadingTime }} minutes{{ end }}
+	{{ end }}
 	{{ if .Params.author }}
 	    by {{ .Params.author.name }}
 	{{ end }}
