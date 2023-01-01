@@ -5,7 +5,7 @@
     default 25) }}
     {{ range $paginator.Pages }}
     {{ if .Title }}
-    {{ if .showFullPost }}
+    {{ if .Site.Params.showFullPost }}
     <li class="post-list-item">
       <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta">{{ .Title }}</span></a>
       <div class="post-list-item-content">
