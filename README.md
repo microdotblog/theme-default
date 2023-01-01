@@ -15,7 +15,8 @@ Cards is a simple and lightweight theme for Micro.blog.
 Email me from this [form](https://ericgregorich.com/email/) if you have any issues. I'll help the best I can.
 
 ## Change Log
--2022-12-16 v1.1.5 Added support to show Read Later time for posts greater than 1 minute.
+- 2023-01-01 v1.1.6 Now showing the category on post pages. Added option to truncate long post on home and list pages.
+- 2022-12-16 v1.1.5 Added support to show Read Later time for posts greater than 1 minute.
 - 2022-12-11 v1.1.4 Built in support for @Sod's Conversation and Reply by Email plugins. Just install and configure the plugin and it will automatically appear below your posts!
 - 2022-12-09 v1.1.3 Fixed missing pagination. Added category title to category page. CSS fixes.
 - 2022-12-09 v1.1.1 Added a Dark Theme toggle. Configure your light (default) and dark theme colors in settings.
