@@ -64,6 +64,11 @@
       "type": "color"
     },
     {
+      "field": "params.light_meta_color",
+      "label": "(Light) Meta",
+      "type": "color"
+    }
+    {
       "field": "params.usedarktheme",
       "label": "Enable Dark Theme Toggle? This will alternate between the colors above and the colors below.",
       "type": "boolean"
@@ -121,6 +126,11 @@
     {
       "field": "params.dark_blockquote_text",
       "label": "(Dark) Blockquote Text",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_meta_color",
+      "label": "(Dark) Meta",
       "type": "color"
     }
   ]

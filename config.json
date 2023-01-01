@@ -11,6 +11,7 @@
     "light_blockquote_color": "#f8eec4",
     "light_blockquote_border": "#d6a32e",
     "light_blockquote_text": "#2a2a2b",
+    "light_meta_color": "#666666",
     "dark_body_background_color": "#2a2a2b",
     "dark_body_text_color": "#ffffff",
     "dark_body_accent_color": "#16a5d4",
@@ -22,6 +23,7 @@
     "dark_blockquote_color": "#f8eec4",
     "dark_blockquote_border": "#d6a32e",
     "dark_blockquote_text": "#2a2a2b",
+    "dark_meta_color": "#666666",
     "usedarktheme": true,
     "showReadingTime": true
   }

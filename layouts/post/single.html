@@ -1,19 +1,41 @@
 {{ define "main" }}
 <div class="post h-entry">
-
   <header class="post-header">
-	{{ if .Title }}
+		{{ if .Title }}
 	  	<h1 class="post-list-item-title">{{ .Title }}</h1>
+		  <p class="post-meta">
+			<span><time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span>
+			{{ if .Site.Params.showReadingTime }}
+				<span>{{ if gt .ReadingTime 1 }} Reading Time: {{ .ReadingTime }} minutes{{ end }}</span>
+			{{ end }}
+			{{ if .Params.author }}
+				<span>by {{ .Params.author.name }}</span>
+			{{ end }}
+				{{ with .Params.categories  }}
+					  {{ range . }}
+					  {{ $name := . }}
+						{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) }}
+						<span><a href="{{ .Permalink }}" class="p-category" >{{ $name }}</a></span>
+						{{ end -}}
+					  {{ end }}
+					  {{ end }}
+			</p>
+	{{ else }}
+		<h1 class="post-list-item-title"><time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></h1>
+		<p class="post-meta">
+			{{ if .Params.author }}
+				by {{ .Params.author.name }}
+			{{ end }}
+{{ with .Params.categories  }}
+					  {{ range . }}
+					  {{ $name := . }}
+						{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) }}
+						<a href="{{ .Permalink }}" class="p-category" >{{ $name }}</a>
+						{{ end -}}
+					  {{ end }}
+					  {{ end }}
+			</p>
   	{{ end }}
-    <p class="post-meta">
-	<time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-	{{ if .Site.Params.showReadingTime }}
-		{{ if gt .ReadingTime 1 }} Reading Time: {{ .ReadingTime }} minutes{{ end }}
-	{{ end }}
-	{{ if .Params.author }}
-	    by {{ .Params.author.name }}
-	{{ end }}
-	</p>
   </header>
 
   <article class="post-content e-content">

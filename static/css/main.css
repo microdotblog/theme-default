@@ -39,7 +39,12 @@ h3 {
 
 .post-meta {
   font-size: var(--font-size-small);
+  color: var(--)
  }
+
+ .post-meta  span {
+  margin-right: 10px;
+}
 
 /** Images */
 img {
@@ -281,6 +286,10 @@ div.archive_categories p a {
   border-radius: 2px;
   text-transform: lowercase;
   padding: 2px 8px 4px 8px;
+}
+
+div.archive_categories span {
+  margin-right: 15px;
 }
 
 div.archive_categories p a:hover {
