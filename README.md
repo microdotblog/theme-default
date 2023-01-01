@@ -1,20 +1,26 @@
 # The Cards theme for Micro.blog
-Cards is a simple and lightweight theme for Micro.blog. 
+
+Cards is a simple and lightweight theme for Micro.blog.
+
 - Posts are styled as "Cards,” hence the theme name.
 - Optimized for performance, accessibility, and SEO.
 - Compatible with other plugins.
 - Easily change the theme colors from your plugin settings.
 - A toggle to allow visitors to toggle between light and dark mode.
 - An option to enable Reading Time on posts greater than 1 minute long.
+- An option to truncate posts on the home page and list pages.
+- Shows the post categories as links on the post page.
 
 !["Card Theme Samples"](https://raw.githubusercontent.com/ericgregorich/micro-blog-cards-theme/master/screenshot.png)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M0DLOZR)
 
 ## Support
+
 Email me from this [form](https://ericgregorich.com/email/) if you have any issues. I'll help the best I can.
 
 ## Change Log
+
 - 2023-01-01 v1.1.6 Now showing the category on post pages. Added option to truncate long post on home and list pages.
 - 2022-12-16 v1.1.5 Added support to show Read Later time for posts greater than 1 minute.
 - 2022-12-11 v1.1.4 Built in support for @Sod's Conversation and Reply by Email plugins. Just install and configure the plugin and it will automatically appear below your posts!
@@ -25,12 +31,14 @@ Email me from this [form](https://ericgregorich.com/email/) if you have any issu
 - 2022-12-03 v1.0.8: Minor CSS fixes. Removed custom 404 page since it can be added as a page through the UI.
 
 ## Installation
+
 - Open the Design page in your Micro.blog settings.
 - Set your current theme to Blank and Hugo Version to 0.91 in the design section of your blog admin.
 - Uninstall any theme that you already have installed.
 - Install the Cards theme.
 
 ## Customizations
+
 You can customize the colors in the Cards theme from your Plugin Settings screen.
 
 The name of each setting should be self-explanatory. The Body colors affect the content outside the “cards,” and the Card colors affect the “cards” themselves.
@@ -47,7 +55,7 @@ The name of each setting should be self-explanatory. The Body colors affect the 
 - Click on the Update Template button to save your changes.
 
 ## How to add additional customizations
+
 The easiest (and safest) way to customize this theme is to create a new blank theme while the Cards theme is installed. You can customize the template files in your blank theme without changing this Cards theme.
 
 When updates are pushed out to the Cards theme, the theme files will be updated automatically. Any custom theme files you have in your custom theme will be untouched.
-
