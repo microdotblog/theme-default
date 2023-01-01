@@ -1,31 +1,45 @@
 {{ define "main" }}
 <div class="home h-feed">
-
   <ul class="post-list">
-	{{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
-	{{ range $paginator.Pages  }}
-      <li class="post-list-item">
-		{{ if .Title }}
-			<h2><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h2>
-		{{ end }}
-
-        <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
-
-        <div class="post-list-item-content">
-         	{{ .Content }}
-        </div>
-      </li>
+    {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" |
+    default 25) }}
+    {{ range $paginator.Pages }}
+    {{ if .Title }}
+    {{ if .showFullPost }}
+    <li class="post-list-item">
+      <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta">{{ .Title }}</span></a>
+      <div class="post-list-item-content">
+        <p>{{ .Summary | truncate 300 }} <a href="{{ .Permalink }}" class="continue-link">read more</a></p>
+      </div>
+    </li>
+    {{ else }}
+    <li class="post-list-item">
+      <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta">{{ .Title }}</span></a>
+      <div class="post-list-item-content">
+        {{ .Content }}
+      </div>
+    </li>
+    {{ end }}
+    {{ else }}
+    <li class="post-list-item">
+      <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published"
+            datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006"
+            }}</time></span></a>
+      <div class="post-list-item-content">
+        {{ .Content }}
+      </div>
+    </li>
+    {{ end }}
     {{ end }}
   </ul>
-
 </div>
 <div class="pagination">
   {{ if .IsHome }}
-    {{ if .Site.Params.paginate_home }}
-      {{ partial "pagination" . }}
-    {{ end }}
-  {{ else if .Site.Params.paginate_categories }}
-    {{ partial "pagination" . }}
+  {{ if .Site.Params.paginate_home }}
+  {{ partial "pagination" . }}
   {{ end }}
-  </div>
+  {{ else if .Site.Params.paginate_categories }}
+  {{ partial "pagination" . }}
+  {{ end }}
+</div>
 {{ end }}
