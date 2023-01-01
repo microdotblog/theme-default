@@ -21,6 +21,7 @@ Email me from this [form](https://ericgregorich.com/email/) if you have any issu
 
 ## Change Log
 
+- 2023-01-01 v1.1.7 Fixed an issue where all posts were showing on category lists.
 - 2023-01-01 v1.1.6 Now showing the category on post pages. Added option to truncate long post on home and list pages.
 - 2022-12-16 v1.1.5 Added support to show Read Later time for posts greater than 1 minute.
 - 2022-12-11 v1.1.4 Built in support for @Sod's Conversation and Reply by Email plugins. Just install and configure the plugin and it will automatically appear below your posts!
