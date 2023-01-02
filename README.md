@@ -8,7 +8,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 - Easily change the theme colors from your plugin settings.
 - A toggle to allow visitors to toggle between light and dark mode.
 - An option to enable Reading Time on posts greater than 1 minute long.
-- An option to truncate posts on the home page and list pages.
+- An option to truncate posts on the home and category pages.
 - Shows the post categories as links on the post page.
 
 !["Card Theme Samples"](https://raw.githubusercontent.com/ericgregorich/micro-blog-cards-theme/master/screenshot.png)
@@ -21,6 +21,7 @@ Email me from this [form](https://ericgregorich.com/email/) if you have any issu
 
 ## Change Log
 
+- 2023-01-02 v1.1.8 Updated the style of categories on the post pages.
 - 2023-01-01 v1.1.7 Fixed an issue where all posts were showing on category lists.
 - 2023-01-01 v1.1.6 Now showing the category on post pages. Added option to truncate long post on home and list pages.
 - 2022-12-16 v1.1.5 Added support to show Read Later time for posts greater than 1 minute.

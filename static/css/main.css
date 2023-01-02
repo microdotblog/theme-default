@@ -40,9 +40,9 @@ h3 {
 .post-meta {
   font-size: var(--font-size-small);
   color: var(--meta-color);
- }
+}
 
- .post-meta  span {
+.post-meta span {
   margin-right: 10px;
 }
 
@@ -96,7 +96,7 @@ a.site-header-title-link:hover {
   padding: 6px 8px 4px 8px;
   color: var(--body-text-color);
   border: 1px solid var(--shadow-color);
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 5px;
   border-radius: 5px;
   background-color: var(--card-background-color);
@@ -275,6 +275,10 @@ div.archive_categories p {
   margin-right: 5px;
 }
 
+header.post-header div.archive_categories {
+  margin-top: -20px;
+}
+
 div.archive_categories p a {
   color: var(--card-accent-color);
   margin-right: 5px;
@@ -332,21 +336,22 @@ form button[type='submit'] {
   padding: 30px 0px 10px 0px;
 }
 
-.pagination .prev, .pagination .next{
+.pagination .prev,
+.pagination .next {
   padding: 30px;
 }
 
-.pagination .prev a:hover, .pagination .next a:hover {
+.pagination .prev a:hover,
+.pagination .next a:hover {
   color: var(--hover-color);
 }
-
 
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
   display: flex;
-position: absolute;
+  position: absolute;
   align-items: center;
-right:20px;
+  right: 20px;
 }
 
 .theme-switch {

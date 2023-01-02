@@ -11,6 +11,8 @@
 				{{ if .Params.author }}
 					<span>by {{ .Params.author.name }}</span>
 				{{ end }}
+				
+				</div>
 				{{ if .Params.categories }}
 					<div class="archive_categories">
 						{{ with .Params.categories  }}
@@ -23,14 +25,14 @@
 						{{ end }}
 					</div>
 				{{ end }}
-				</div>
 	{{ else }}
 		<h1 class="post-list-item-title"><time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></h1>
 		<div class="post-meta">
 			{{ if .Params.author }}
 					by {{ .Params.author.name }}
 			{{ end }}
-			{{ if .Params.categories }}
+		</div>
+		{{ if .Params.categories }}
 					<div class="archive_categories">
 						{{ with .Params.categories  }}
 							{{ range . }}
@@ -42,7 +44,6 @@
 						{{ end }}
 					</div>
 			{{ end }}
-		</div>
   	{{ end }}
   </header>
 
