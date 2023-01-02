@@ -268,8 +268,11 @@ code {
 div.archive_categories {
   display: flex;
   flex-flow: wrap;
-  margin-top: 20px;
   justify-content: center;
+}
+
+div.post-meta div.archive_categories {
+  margin-top: -20px;
 }
 
 div.archive_categories p {
