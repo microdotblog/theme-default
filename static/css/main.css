@@ -40,6 +40,8 @@ h3 {
 .post-meta {
   font-size: var(--font-size-small);
   color: var(--meta-color);
+  display: flex;
+  justify-content: center;
 }
 
 .post-meta span {
