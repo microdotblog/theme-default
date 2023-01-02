@@ -275,10 +275,6 @@ div.archive_categories p {
   margin-right: 5px;
 }
 
-header.post-header div.archive_categories {
-  margin-top: -20px;
-}
-
 div.archive_categories p a {
   color: var(--card-accent-color);
   margin-right: 5px;
