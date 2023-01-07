@@ -5,12 +5,17 @@
   "fields": [
     {
       "field": "params.showFullPost",
-      "label": "Show full post on home page? ",
+      "label": "Show full post on home? ",
       "type": "boolean"
     },
     {
       "field": "params.showReadingTime",
-      "label": "Show Reading Time on posts greater than 1 minute?",
+      "label": "Show Reading Time?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showPostCategories",
+      "label": "Show Post Categories?",
       "type": "boolean"
     },
     {

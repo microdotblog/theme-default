@@ -26,6 +26,7 @@
     "dark_meta_color": "#a2a2a3",
     "usedarktheme": true,
     "showReadingTime": true,
-    "showFullPost": false
+    "showFullPost": false,
+    "showPostCategories": true
   }
 }

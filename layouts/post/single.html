@@ -13,17 +13,19 @@
 				{{ end }}
 				
 				</div>
-				{{ if .Params.categories }}
-					<div class="archive_categories">
-						{{ with .Params.categories  }}
-							{{ range . }}
-							{{ $name := . }}
-								{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) }}
-								<p><a href="{{ .Permalink }}" class="p-category" >{{ $name }}</a></p>
-								{{ end -}}
+				{{ if .Site.Params.showPostCategories }}
+					{{ if .Params.categories }}
+						<div class="archive_categories">
+							{{ with .Params.categories  }}
+								{{ range . }}
+								{{ $name := . }}
+									{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) }}
+									<p><a href="{{ .Permalink }}" class="p-category" >{{ $name }}</a></p>
+									{{ end -}}
+								{{ end }}
 							{{ end }}
-						{{ end }}
-					</div>
+						</div>
+					{{ end }}
 				{{ end }}
 	{{ else }}
 		<h1 class="post-list-item-title"><time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></h1>
