@@ -1,69 +1,71 @@
 {{ define "main" }}
 <div class="post h-entry">
-  <header class="post-header">
+	<header class="post-header">
 		{{ if .Title }}
-	  		<h1 class="post-list-item-title">{{ .Title }}</h1>
-		  	<div class="post-meta">
-				<span><time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span>
-				{{ if .Site.Params.showReadingTime }}
-					{{ if gt .ReadingTime 1 }} <span>Reading Time: {{ .ReadingTime }} minutes</span>{{ end }}
-				{{ end }}
-				{{ if .Params.author }}
-					<span>by {{ .Params.author.name }}</span>
-				{{ end }}
-				
-				</div>
-				{{ if .Site.Params.showPostCategories }}
-					{{ if .Params.categories }}
-						<div class="archive_categories">
-							{{ with .Params.categories  }}
-								{{ range . }}
-								{{ $name := . }}
-									{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) }}
-									<p><a href="{{ .Permalink }}" class="p-category" >{{ $name }}</a></p>
-									{{ end -}}
-								{{ end }}
-							{{ end }}
-						</div>
-					{{ end }}
-				{{ end }}
-	{{ else }}
-		<h1 class="post-list-item-title"><time class="post-list-item-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></h1>
+		<h1 class="post-list-item-title">{{ .Title }}</h1>
 		<div class="post-meta">
+			<span><time class="post-list-item-date" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{
+					.Date.Format "Jan 2, 2006" }}</time></span>
+			{{ if .Site.Params.showReadingTime }}
+			{{ if gt .ReadingTime 1 }} <span>Reading Time: {{ .ReadingTime }} minutes</span>{{ end }}
+			{{ end }}
 			{{ if .Params.author }}
-					by {{ .Params.author.name }}
+			<span>by {{ .Params.author.name }}</span>
 			{{ end }}
 		</div>
+		{{ if .Site.Params.showPostCategories }}
 		{{ if .Params.categories }}
-					<div class="archive_categories">
-						{{ with .Params.categories  }}
-							{{ range . }}
-							{{ $name := . }}
-								{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) }}
-								<p><a href="{{ .Permalink }}" class="p-category" >{{ $name }}</a></p>
-								{{ end -}}
-							{{ end }}
-						{{ end }}
-					</div>
+		<div class="archive_categories">
+			{{ with .Params.categories }}
+			{{ range . }}
+			{{ $name := . }}
+			{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy"
+			(printf "categories/%s" ($name | urlize))) }}
+			<p><a href="{{ .Permalink }}" class="p-category">{{ $name }}</a></p>
+			{{ end -}}
 			{{ end }}
-  	{{ end }}
-  </header>
-
-  <article class="post-content e-content">
-	{{ .Content }}
-  </article>
-
+			{{ end }}
+		</div>
+		{{ end }}
+		{{ end }}
+		{{ else }}
+		<h1 class="post-list-item-title"><time class="post-list-item-date" datetime="{{ .Date.Format " 2006-01-02
+				15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></h1>
+		<div class="post-meta">
+			{{ if .Params.author }}
+			by {{ .Params.author.name }}
+			{{ end }}
+		</div>
+		{{ if .Site.Params.showPostCategories }}
+		{{ if .Params.categories }}
+		<div class="archive_categories">
+			{{ with .Params.categories }}
+			{{ range . }}
+			{{ $name := . }}
+			{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy"
+			(printf "categories/%s" ($name | urlize))) }}
+			<p><a href="{{ .Permalink }}" class="p-category">{{ $name }}</a></p>
+			{{ end -}}
+			{{ end }}
+			{{ end }}
+		</div>
+		{{ end }}
+		{{ end }}
+		{{ end }}
+	</header>
+	<article class="post-content e-content">
+		{{ .Content }}
+	</article>
 </div>
 {{ if eq .Type "post"}}
-    {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
+{{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
 <div class="response-options">
 	{{ if templates.Exists "partials/conversation-link.html" }}{{ partial "conversation-link.html" . }}{{ end }}
 	{{ if templates.Exists "partials/reply-by-email.html" }}{{ partial "reply-by-email.html" . }}{{ end }}
 </div>
 {{ end }}
-  {{ end }}
+{{ end }}
 {{ if .Site.Params.include_conversation }}
 <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
 {{ end }}
-
 {{ end }}
