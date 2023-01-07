@@ -12,6 +12,7 @@
 			{{ if .Params.author }}
 			<span>by {{ .Params.author.name }}</span>
 			{{ end }}
+
 		</div>
 		{{ if .Site.Params.showPostCategories }}
 		{{ if .Params.categories }}
@@ -37,7 +38,6 @@
 			{{ end }}
 		</div>
 		{{ if .Site.Params.showPostCategories }}
-		{{ if .Params.categories }}
 		<div class="archive_categories">
 			{{ with .Params.categories }}
 			{{ range . }}
@@ -51,11 +51,12 @@
 		</div>
 		{{ end }}
 		{{ end }}
-		{{ end }}
 	</header>
+
 	<article class="post-content e-content">
 		{{ .Content }}
 	</article>
+
 </div>
 {{ if eq .Type "post"}}
 {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
@@ -68,4 +69,5 @@
 {{ if .Site.Params.include_conversation }}
 <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
 {{ end }}
+
 {{ end }}
