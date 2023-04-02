@@ -314,11 +314,12 @@ input[type='text'],
 input[type='search'],
 input[type='q']
 textarea[name='message'] {
-  padding: 8px;
-  border: 2px solid var(--shadow-color);
+  padding: 12px 20px;
+  margin: 8px 8px 0;
+  box-sizing: border-box;
+  border: 1px solid var(--shadow-color);
   border-radius: 10px;
-  width: 270px;
-  margin: 20px;
+  width: 500px;
   height: 35px;
   font-size: var(--font-size-normal);
 }
