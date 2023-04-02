@@ -177,7 +177,8 @@ li.post-list-item,
 .post,
 li.h-entry,
 p.h-entry,
-div.photos-grid-container {
+div.photos-grid-container,
+div.microblog_conversation {
   border: 1px solid var(--shadow-color);
   list-style: none;
   border-radius: 10px;
@@ -312,8 +313,7 @@ input[id='input_search'],
 input[type='email'],
 input[type='text'],
 input[type='search'],
-input[type='q']
-textarea[name='message'] {
+input[type='q'] textarea[name='message'] {
   padding: 12px 20px;
   margin: 8px 8px 0;
   box-sizing: border-box;
