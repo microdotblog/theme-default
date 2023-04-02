@@ -48,6 +48,10 @@ h3 {
   margin-right: 10px;
 }
 
+hr {
+  border-top: 1px dotted var(--shadow-color);
+}
+
 /** Images */
 img {
   max-width: 100%;
@@ -303,28 +307,30 @@ div.archive_categories p a:hover {
 }
 
 /** Form fields */
+input[id='q'],
 input[id='input_search'],
 input[type='email'],
 input[type='text'],
+input[type='search'],
 textarea[name='message'] {
   padding: 8px;
   border: 2px solid var(--shadow-color);
   border-radius: 10px;
   width: 270px;
   margin: 20px;
-  height: 25px;
+  height: 35px;
   font-size: var(--font-size-normal);
 }
 
 form input[type='submit'],
-form button[type='submit'] {
+form button {
   background-color: var(--body-accent-color);
   border: 0;
   padding: 8px;
   border-radius: 8px;
   color: white;
   min-width: 100px;
-  height: 43px;
+  height: 35px;
   font-size: var(--font-size-normal);
 }
 
