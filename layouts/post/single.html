@@ -7,6 +7,9 @@
   	{{ end }}
     <p class="post-meta">
 	<a href="{{ .Permalink }}" class="u-url"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+	{{ with .Params.audio }}
+	  <script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
+	{{ end }}	    
 	{{ if .Params.author }}
 	    by {{ .Params.author.name }}
 	{{ end }}
