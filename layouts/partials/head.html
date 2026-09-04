@@ -9,7 +9,9 @@
       {{ end }}
   </title>
 
-  <meta name="description" content="{{ .Summary }}">
+  {{ $description := .Summary }}
+  {{ with .Params.summary }}{{ $description = . | markdownify }}{{ end }}
+  <meta name="description" content="{{ $description | plainify | htmlUnescape }}">
 
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
