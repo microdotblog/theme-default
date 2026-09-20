@@ -13,7 +13,7 @@
   {{ with .Params.summary }}{{ $description = . | markdownify }}{{ end }}
   <meta name="description" content="{{ $description | plainify | htmlUnescape }}">
 
-  <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Params.author.username }}/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   <link rel="canonical" href="{{ .Permalink }}">
   {{ partial "microblog_head.html" . }}
